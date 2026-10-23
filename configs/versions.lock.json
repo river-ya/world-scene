@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "project_version": "0.8.1",
+  "reviewed": "2026-10-16",
+  "upstream": {
+    "repo": "https://github.com/imlixinyang/FlashWorld.git",
+    "commit": "424db4487de308a39e5137afbe85e7568a96193f",
+    "files": {
+      ".gitignore": "50311f366ca34c097c506cdc06fef165551563da4d04cc3926e1d230932d9c2f",
+      "LICENSE": "02dc14c6296cb34ab75d456998c1439ee2e2f40ef999491e7b1aa775a8f64a7e",
+      "README.md": "bc3524429445ba5aa628dd4e3dfd0151deff7da11c6530c1792114443bbb09b8",
+      "app.py": "23e867341e3a72d6dd15c4a84f9aa259214f5a95d5bb054b039f3fdd4f818a1b",
+      "cli.py": "d42b41e95492e6598451cd966ceb9337deae2f487cb7b99a19ea5675a973ad77",
+      "examples/1.json": "8ca002352be50960852107cf748124e59ef34cad1be3b36a10f8ba31a123348e",
+      "examples/2.json": "167ae8ac2b10b4a58cd367fa7e6ddc543193156dd574764757e27b82fa37be87",
+      "examples/3.json": "6ebc75f63c9e6c36eb47335ece305679d6f2ef07fcf3f0936fdceff9e2dbf45c",
+      "examples/4.json": "243e49119e7db4d5ef62f8537cdccc1a00ebe1d4da847fcc04bc169e5ba9d4dc",
+      "examples/5.json": "57818b6776e1116cc100ce80e67f944165585439bc51780da20577b737fec263",
+      "examples/6.json": "8ade17809576f877353097c68738d53b200cbaced82e5366ef2d1a02a0a2031f",
+      "examples/7.json": "2ff4a564c92deac2eb0b8a9e7caff4178128a59f740555444c569ed25b43cc71",
+      "examples/8.json": "c1aa176f832bcddae6453f0e4093e468d82280d8c4386448038d98f65fe5c409",
+      "index.html": "b0a1ed072b0ab99e4e1b43bfb455555943069112144de47606d419ef66100f3e",
+      "models/__init__.py": "cb906cb0f0fe7e00a4a9247581b5c3cac0b93a27eff70a4422b2aec6e0e24318",
+      "models/autoencoder_kl_wan.py": "33fac9a8cc192e3ca686b2b33712e0d3ebc20bedeb556c6b73ede6bcfc1ff781",
+      "models/reconstruction_model.py": "a8a89a8cf2bf87c3add367de7bafa83a417a1ebfe7752fa3b55ae4e372f1d951",
+      "models/render.py": "8cbfd32910f082b1db4b26e2078aa094ae4fe301e82062e63bb0d2afe7f1d1cc",
+      "models/transformer_wan.py": "9007bafc5e6ff9149dcc5dc89fb5688ce304a4db7047e77c0a0ae3c2dbfda428",
+      "quant.py": "76736d14c6c2f081b3dcab13ddd80081d56b72bb5fd38553b14af2481e367043",
+      "requirements.txt": "3a91652542c5b156015dd4655db8d3c2811aa5e06bf0d1636ac709fb09b2794f",
+      "utils.py": "73bc38a609f663a6ce75c44023480c52600a37c0e866c77feddc7495ce7e2293"
+    }
+  },
+  "assets": [
+    {
+      "kind": "model",
+      "repo": "imlixinyang/FlashWorld",
+      "revision": "6a8e88c6f88678ac098e4c82675f0aee555d6e5d",
+      "group": "models",
+      "files": [
+        {
+          "path": "model.ckpt",
+          "size": 20936494840,
+          "digest": "610a09a11917ae112ea71f2f42291d5c8f11f54ae501ec14a8740f22da2540bd",
+          "algorithm": "sha256"
+        }
+      ]
+    },
+    {
+      "kind": "model",
+      "repo": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+      "revision": "b8fff7315c768468a5333511427288870b2e9635",
+      "group": "models",
+      "files": [
+        {
+          "path": "scheduler/scheduler_config.json",
+          "size": 820,
+          "digest": "950d26faea717c8902ee197982026cb9c1b6463e",
+          "algorithm": "git-sha1"
+        },
+        {
+          "path": "text_encoder/config.json",
+          "size": 855,
+          "digest": "ab4a73bce055c6e32e66133032dcb3adfb26ee8d",
+          "algorithm": "git-sha1"
+        },
+        {
+          "path": "text_encoder/model-00001-of-00003.safetensors",
+          "size": 4935812536,
+          "digest": "a8e861969c7433e707cc5a74065d795d36cca07ec96eb6763eb4083df7248f58",
+          "algorithm": "sha256"
+        },
+        {
+          "path": "text_encoder/model-00002-of-00003.safetensors",
+          "size": 4983103192,
+          "digest": "d57d948ece4837d850b7a859a4415121d57cacf8b9ee1d4db200c67f592902d7",
+          "algorithm": "sha256"
+        },
+        {
+          "path": "text_encoder/model-00003-of-00003.safetensors",
+          "size": 1442935480,
+          "digest": "0da9ee284e21d1406df708788db1d502d95d75f69faa25cd26151bf8829b7c5f",
+          "algorithm": "sha256"
+        },
+        {
+          "path": "text_encoder/model.safetensors.index.json",
+          "size": 22476,
+          "digest": "f3d3d4da90eb33e14c92d88ea346370fa3c0b5b2",
+          "algorithm": "git-sha1"
+        },
+        {
+          "path": "tokenizer/special_tokens_map.json",
+          "size": 7079,
+          "digest": "2ed25bf989a28d20b5d4b5822fbc24666d12a6f7",
+          "algorithm": "git-sha1"
+        },
+        {
+          "path": "tokenizer/spiece.model",
+          "size": 4548313,
+          "digest": "e3909a67b780650b35cf529ac782ad2b6b26e6d1f849d3fbb6a872905f452458",
+          "algorithm": "sha256"
+        },
+        {
+          "path": "tokenizer/tokenizer.json",
+          "size": 16837459,
+          "digest": "20a46ac256746594ed7e1e3ef733b83fbc5a6f0922aa7480eda961743de080ef",
+          "algorithm": "sha256"
+        },
+        {
+          "path": "tokenizer/tokenizer_config.json",
+          "size": 61758,
+          "digest": "09d434f9457238f697f4c208aab47f58caa15bfe",
+          "algorithm": "git-sha1"
+        },
+        {
+          "path": "transformer/config.json",
+          "size": 495,
+          "digest": "8180887e8ed86e4fd842824fb15fcabf43d19512",
+          "algorithm": "git-sha1"
+        },
+        {
+          "path": "transformer/diffusion_pytorch_model-00001-of-00005.safetensors",
+          "size": 4978254344,
+          "digest": "511bec832a201caa410d09c5ce7dbbf8ad2708c345d82038f684fc74cce982be",
+          "algorithm": "sha256"
+        },
+        {
+          "path": "transformer/diffusion_pytorch_model-00002-of-00005.safetensors",
+          "size": 4846784976,
+          "digest": "7c42724912b1911429125dc50c0e9a49ccbada5a601b657d4ed2e15e7597c193",
+          "algorithm": "sha256"
+        },
+        {
+          "path": "transformer/diffusion_pytorch_model-00003-of-00005.safetensors",
+          "size": 4972658392,
+          "digest": "e9c3d0c76de786566382f8258101fea973ae37681c6e9fe0e5fe1fb93b806424",
+          "algorithm": "sha256"
+        },
+        {
+          "path": "transformer/diffusion_pytorch_model-00004-of-00005.safetensors",
+          "size": 4846785080,
+          "digest": "a331121771790939678db6f585553fd5184609f7d02593c699a4d241b0d834c5",
+          "algorithm": "sha256"
+        },
+        {
+          "path": "transformer/diffusion_pytorch_model-00005-of-00005.safetensors",
+          "size": 354751840,
+          "digest": "78b655685c47efdb2349f36826bb101264e9f212a16325d584aeb5f53c88e719",
+          "algorithm": "sha256"
+        },
+        {
+          "path": "transformer/diffusion_pytorch_model.safetensors.index.json",
+          "size": 73297,
+          "digest": "4ced518ff3eb023a0477eeab55f2a4d45d6fd43a",
+          "algorithm": "git-sha1"
+        },
+        {
+          "path": "vae/config.json",
+          "size": 1701,
+          "digest": "29f65bc63e9daadb95e4c1a8344d162be4b7d533",
+          "algorithm": "git-sha1"
+        },
+        {
+          "path": "vae/diffusion_pytorch_model.safetensors",
+          "size": 2818777808,
+          "digest": "62cd18f19438e35b32ac63020e2852f566e9b02f46b6cdbd87972a356e3c6f4b",
+          "algorithm": "sha256"
+        }
+      ]
+    },
+    {
+      "kind": "dataset",
+      "repo": "Howieeeee/WorldScore",
+      "revision": "42c4e267e1cc0529af1b0284ce018e04d43906e3",
+      "group": "worldscore",
+      "files": [
+        {
+          "path": "WorldScore-Dataset.zip",
+          "size": 1224417187,
+          "digest": "2365f26cd399b206f72b9f16a0122f895ac6a0c0944544c2c90693eb0996495f",
+          "algorithm": "sha256"
+        }
+      ]
+    }
+  ],
+  "dl3dv": {
+    "repo": "DL3DV/DL3DV-Evaluation",
+    "revision": "0638ee85e23cbf96b50f779a89eaf43dbb7927db",
+    "status": "access_required_scene_selection_pending"
+  },
+  "dependencies": {
+    "python": "3.10",
+    "torch": "2.6.0",
+    "cuda_wheel": "cu124",
+    "diffusers_commit": "447e8322f76efea55d4769cd67c372edbf0715b8",
+    "gsplat_commit": "32f2a54d21c7ecb135320bb02b136b7407ae5712",
+    "spz_commit": "a4fc69e7948c7152e807e6501d73ddc9c149ce37"
+  }
+}

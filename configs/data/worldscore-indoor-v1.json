@@ -1,0 +1,569 @@
+{
+  "schema_version": 1,
+  "subset_version": "1.0.0",
+  "source": "Howieeeee/WorldScore",
+  "revision": "42c4e267e1cc0529af1b0284ce018e04d43906e3",
+  "archive_sha256": "2365f26cd399b206f72b9f16a0122f895ac6a0c0944544c2c90693eb0996495f",
+  "selection": "photorealistic/static/indoor; unchanged content_list; deduplicate image; category round-robin; sha256(world-scene-v1:image); 6 dev + 12 test",
+  "protocol": "custom indoor subset; not full WorldScore benchmark reproduction",
+  "samples": [
+    {
+      "id": "ws-indoor-000",
+      "split": "dev",
+      "source_scene": "static/photorealistic/indoor/dining_spaces/013.jpg",
+      "category": "Dining spaces",
+      "local_image": "images/000.jpg",
+      "image_sha256": "e2d12ecfa31aa17eacd2eb29562d58a9c20865dfe061a5b9a2762da2fd1da1f6",
+      "text": "In the Modern Kitchen, the sleek wooden cabinets and stainless steel oven gleam under soft lighting, with a spacious layout that invites culinary creativity.",
+      "original": {
+        "visual_movement": "static",
+        "visual_style": "photorealistic",
+        "scene_type": "indoor",
+        "style": "photorealistic",
+        "category": "Dining spaces",
+        "content": "Modern Kitchen, Cabinets, Oven",
+        "image": "static/photorealistic/indoor/dining_spaces/013.jpg",
+        "camera_path": [
+          "orbit_right"
+        ],
+        "content_list": [
+          "Modern Kitchen, Cabinets, Oven",
+          "Modern Kitchen, Cabinets, Oven"
+        ],
+        "prompt_list": [
+          "In the Modern Kitchen, the sleek wooden cabinets and stainless steel oven gleam under soft lighting, with a spacious layout that invites culinary creativity.",
+          "In the Modern Kitchen, the sleek wooden cabinets and stainless steel oven gleam under soft lighting, with a spacious layout that invites culinary creativity."
+        ]
+      },
+      "manual_review": "pending",
+      "camera_adapter": "pending; source uses symbolic commands, not calibrated camera matrices"
+    },
+    {
+      "id": "ws-indoor-001",
+      "split": "dev",
+      "source_scene": "static/photorealistic/indoor/living_spaces/029.jpg",
+      "category": "Living spaces",
+      "local_image": "images/001.jpg",
+      "image_sha256": "bc2d11f271ec2ee3cdb558b4a46faa34dc0483b9123a40f350813cdfa6bb534d",
+      "text": "In the Modern Living Space, a sleek armchair and a stylish dining table create a harmonious blend of comfort and elegance.",
+      "original": {
+        "visual_movement": "static",
+        "visual_style": "photorealistic",
+        "scene_type": "indoor",
+        "style": "photorealistic",
+        "category": "Living spaces",
+        "content": "Modern Living Space, Armchair, Dining Table",
+        "image": "static/photorealistic/indoor/living_spaces/029.jpg",
+        "camera_path": [
+          "orbit_right"
+        ],
+        "content_list": [
+          "Modern Living Space, Armchair, Dining Table",
+          "Modern Living Space, Armchair, Dining Table"
+        ],
+        "prompt_list": [
+          "In the Modern Living Space, a sleek armchair and a stylish dining table create a harmonious blend of comfort and elegance.",
+          "In the Modern Living Space, a sleek armchair and a stylish dining table create a harmonious blend of comfort and elegance."
+        ]
+      },
+      "manual_review": "pending",
+      "camera_adapter": "pending; source uses symbolic commands, not calibrated camera matrices"
+    },
+    {
+      "id": "ws-indoor-002",
+      "split": "dev",
+      "source_scene": "static/photorealistic/indoor/passageways/021.jpg",
+      "category": "Passageways",
+      "local_image": "images/002.jpg",
+      "image_sha256": "3ea9c962e2dc1baef2422e407262c608d29412645c435159c38dc1d02a34aeb7",
+      "text": "In the Abandoned Hallway, scattered debris and damaged walls create an eerie, dilapidated atmosphere.",
+      "original": {
+        "visual_movement": "static",
+        "visual_style": "photorealistic",
+        "scene_type": "indoor",
+        "style": "photorealistic",
+        "category": "Passageways",
+        "content": "Abandoned Hallway, debris, damaged walls",
+        "image": "static/photorealistic/indoor/passageways/021.jpg",
+        "camera_path": [
+          "orbit_right"
+        ],
+        "content_list": [
+          "Abandoned Hallway, debris, damaged walls",
+          "Abandoned Hallway, debris, damaged walls"
+        ],
+        "prompt_list": [
+          "In the Abandoned Hallway, scattered debris and damaged walls create an eerie, dilapidated atmosphere.",
+          "In the Abandoned Hallway, scattered debris and damaged walls create an eerie, dilapidated atmosphere."
+        ]
+      },
+      "manual_review": "pending",
+      "camera_adapter": "pending; source uses symbolic commands, not calibrated camera matrices"
+    },
+    {
+      "id": "ws-indoor-003",
+      "split": "dev",
+      "source_scene": "static/photorealistic/indoor/public_spaces/040.jpg",
+      "category": "Public spaces",
+      "local_image": "images/003.jpg",
+      "image_sha256": "472908026c8df529f91eff39f9f406b447fc341aed2cd7590d404da234e03878",
+      "text": "In the Historic Library, towering bookshelves and a stone tablet display create an atmosphere of ancient wisdom and knowledge.",
+      "original": {
+        "visual_movement": "static",
+        "visual_style": "photorealistic",
+        "scene_type": "indoor",
+        "style": "photorealistic",
+        "category": "Public spaces",
+        "content": "Historic Library, bookshelves, stone tablets display",
+        "image": "static/photorealistic/indoor/public_spaces/040.jpg",
+        "camera_path": [
+          "push_in"
+        ],
+        "content_list": [
+          "Historic Library, bookshelves, stone tablets display",
+          "Historic Library, bookshelves, stone tablets display"
+        ],
+        "prompt_list": [
+          "In the Historic Library, towering bookshelves and a stone tablet display create an atmosphere of ancient wisdom and knowledge.",
+          "In the Historic Library, towering bookshelves and a stone tablet display create an atmosphere of ancient wisdom and knowledge."
+        ]
+      },
+      "manual_review": "pending",
+      "camera_adapter": "pending; source uses symbolic commands, not calibrated camera matrices"
+    },
+    {
+      "id": "ws-indoor-004",
+      "split": "dev",
+      "source_scene": "static/photorealistic/indoor/workspaces/064.png",
+      "category": "Workspaces",
+      "local_image": "images/004.png",
+      "image_sha256": "8535d30a4901ab06df21639a7798d850a2e9c9e0fedf7a1f0723d6fc4e6f15b2",
+      "text": "In the Modern Office, natural light filters through sheer curtains, softly illuminating the sleek desk and ergonomic chairs.",
+      "original": {
+        "visual_movement": "static",
+        "visual_style": "photorealistic",
+        "scene_type": "indoor",
+        "style": "photorealistic",
+        "category": "Workspaces",
+        "content": "Modern Office, desk, chairs",
+        "image": "static/photorealistic/indoor/workspaces/064.png",
+        "camera_path": [
+          "push_in"
+        ],
+        "content_list": [
+          "Modern Office, desk, chairs",
+          "Modern Office, desk, chairs"
+        ],
+        "prompt_list": [
+          "In the Modern Office, natural light filters through sheer curtains, softly illuminating the sleek desk and ergonomic chairs.",
+          "In the Modern Office, natural light filters through sheer curtains, softly illuminating the sleek desk and ergonomic chairs."
+        ]
+      },
+      "manual_review": "pending",
+      "camera_adapter": "pending; source uses symbolic commands, not calibrated camera matrices"
+    },
+    {
+      "id": "ws-indoor-005",
+      "split": "dev",
+      "source_scene": "static/photorealistic/indoor/dining_spaces/037.jpg",
+      "category": "Dining spaces",
+      "local_image": "images/005.jpg",
+      "image_sha256": "cf2799a5b34c2c6db24b29dd88bcb88ddafe97f180b1dd73f04f028e74108f51",
+      "text": "In the Modern Kitchen scene, the stainless steel refrigerator stands beside the sleek kitchen island, under bright, overhead lighting.",
+      "original": {
+        "visual_movement": "static",
+        "visual_style": "photorealistic",
+        "scene_type": "indoor",
+        "style": "photorealistic",
+        "category": "Dining spaces",
+        "content": "Modern Kitchen, Refrigerator, Kitchen Island",
+        "image": "static/photorealistic/indoor/dining_spaces/037.jpg",
+        "camera_path": [
+          "orbit_right"
+        ],
+        "content_list": [
+          "Modern Kitchen, Refrigerator, Kitchen Island",
+          "Modern Kitchen, Refrigerator, Kitchen Island"
+        ],
+        "prompt_list": [
+          "In the Modern Kitchen scene, the stainless steel refrigerator stands beside the sleek kitchen island, under bright, overhead lighting.",
+          "In the Modern Kitchen scene, the stainless steel refrigerator stands beside the sleek kitchen island, under bright, overhead lighting."
+        ]
+      },
+      "manual_review": "pending",
+      "camera_adapter": "pending; source uses symbolic commands, not calibrated camera matrices"
+    },
+    {
+      "id": "ws-indoor-006",
+      "split": "test",
+      "source_scene": "static/photorealistic/indoor/living_spaces/021.jpg",
+      "category": "Living spaces",
+      "local_image": "images/006.jpg",
+      "image_sha256": "4740e3f7e5083d899757457c2c587050bd1d596022a00d11befdabb0809592bb",
+      "text": "In the Modern Bedroom, sunlight gently streams over a large bed with plush pillows, flanked by elegant nightstands.",
+      "original": {
+        "visual_movement": "static",
+        "visual_style": "photorealistic",
+        "scene_type": "indoor",
+        "style": "photorealistic",
+        "category": "Living spaces",
+        "content": "Modern Bedroom, Bed, Nightstand",
+        "image": "static/photorealistic/indoor/living_spaces/021.jpg",
+        "camera_path": [
+          "orbit_right"
+        ],
+        "content_list": [
+          "Modern Bedroom, Bed, Nightstand",
+          "Modern Bedroom, Bed, Nightstand"
+        ],
+        "prompt_list": [
+          "In the Modern Bedroom, sunlight gently streams over a large bed with plush pillows, flanked by elegant nightstands.",
+          "In the Modern Bedroom, sunlight gently streams over a large bed with plush pillows, flanked by elegant nightstands."
+        ]
+      },
+      "manual_review": "pending",
+      "camera_adapter": "pending; source uses symbolic commands, not calibrated camera matrices"
+    },
+    {
+      "id": "ws-indoor-007",
+      "split": "test",
+      "source_scene": "static/photorealistic/indoor/passageways/060.jpg",
+      "category": "Passageways",
+      "local_image": "images/007.jpg",
+      "image_sha256": "3fc860a3a3cd7fb23123d309433e89c1f717b64262a36dc250a205edcf3b7c00",
+      "text": "In the Wooden Corridor scene, rows of wooden pillars create a symmetrical path stretching into the distance.",
+      "original": {
+        "visual_movement": "static",
+        "visual_style": "photorealistic",
+        "scene_type": "indoor",
+        "style": "photorealistic",
+        "category": "Passageways",
+        "content": "Wooden Corridor, wooden pillars",
+        "image": "static/photorealistic/indoor/passageways/060.jpg",
+        "camera_path": [
+          "orbit_left"
+        ],
+        "content_list": [
+          "Wooden Corridor, wooden pillars",
+          "Wooden Corridor, wooden pillars"
+        ],
+        "prompt_list": [
+          "In the Wooden Corridor scene, rows of wooden pillars create a symmetrical path stretching into the distance.",
+          "In the Wooden Corridor scene, rows of wooden pillars create a symmetrical path stretching into the distance."
+        ]
+      },
+      "manual_review": "pending",
+      "camera_adapter": "pending; source uses symbolic commands, not calibrated camera matrices"
+    },
+    {
+      "id": "ws-indoor-008",
+      "split": "test",
+      "source_scene": "static/photorealistic/indoor/public_spaces/008.jpg",
+      "category": "Public spaces",
+      "local_image": "images/008.jpg",
+      "image_sha256": "5d42313be8ab9dd8450d7cd0a2e9e825af20d04cf0e0548eb0c6bd8c4f5ac120",
+      "text": "In the Space Exhibit, a group of people curiously observes a prominently displayed submarine capsule beneath the modern, airy museum's high ceilings.",
+      "original": {
+        "visual_movement": "static",
+        "visual_style": "photorealistic",
+        "scene_type": "indoor",
+        "style": "photorealistic",
+        "category": "Public spaces",
+        "content": "Space Exhibit, Submarine Capsule, People Observing Exhibit",
+        "image": "static/photorealistic/indoor/public_spaces/008.jpg",
+        "camera_path": [
+          "push_in"
+        ],
+        "content_list": [
+          "Space Exhibit, Submarine Capsule, People Observing Exhibit",
+          "Space Exhibit, Submarine Capsule, People Observing Exhibit"
+        ],
+        "prompt_list": [
+          "In the Space Exhibit, a group of people curiously observes a prominently displayed submarine capsule beneath the modern, airy museum's high ceilings.",
+          "In the Space Exhibit, a group of people curiously observes a prominently displayed submarine capsule beneath the modern, airy museum's high ceilings."
+        ]
+      },
+      "manual_review": "pending",
+      "camera_adapter": "pending; source uses symbolic commands, not calibrated camera matrices"
+    },
+    {
+      "id": "ws-indoor-009",
+      "split": "test",
+      "source_scene": "static/photorealistic/indoor/workspaces/024.jpg",
+      "category": "Workspaces",
+      "local_image": "images/009.jpg",
+      "image_sha256": "75b451179a23b3fef61f7e7c9299018cc78f808697ee476dd295e6d6cf309053",
+      "text": "In the \"Sunny Office View,\" sunlight pours through large windows, casting warm reflections off the sleek table and modern chair.",
+      "original": {
+        "visual_movement": "static",
+        "visual_style": "photorealistic",
+        "scene_type": "indoor",
+        "style": "photorealistic",
+        "category": "Workspaces",
+        "content": "Sunny Office View, table, chair",
+        "image": "static/photorealistic/indoor/workspaces/024.jpg",
+        "camera_path": [
+          "push_in"
+        ],
+        "content_list": [
+          "Sunny Office View, table, chair",
+          "Sunny Office View, table, chair"
+        ],
+        "prompt_list": [
+          "In the \"Sunny Office View,\" sunlight pours through large windows, casting warm reflections off the sleek table and modern chair.",
+          "In the \"Sunny Office View,\" sunlight pours through large windows, casting warm reflections off the sleek table and modern chair."
+        ]
+      },
+      "manual_review": "pending",
+      "camera_adapter": "pending; source uses symbolic commands, not calibrated camera matrices"
+    },
+    {
+      "id": "ws-indoor-010",
+      "split": "test",
+      "source_scene": "static/photorealistic/indoor/dining_spaces/016.jpg",
+      "category": "Dining spaces",
+      "local_image": "images/010.jpg",
+      "image_sha256": "0077f510c25782cc3421ea875300a025bdec3d878352fc044d32cfa1fe5db631",
+      "text": "In the Modern Kitchen, the sleek oven and vibrant kettle create a harmonious blend of function and style against a marbled backsplash.",
+      "original": {
+        "visual_movement": "static",
+        "visual_style": "photorealistic",
+        "scene_type": "indoor",
+        "style": "photorealistic",
+        "category": "Dining spaces",
+        "content": "Modern Kitchen, oven, kettle",
+        "image": "static/photorealistic/indoor/dining_spaces/016.jpg",
+        "camera_path": [
+          "push_in"
+        ],
+        "content_list": [
+          "Modern Kitchen, oven, kettle",
+          "Modern Kitchen, oven, kettle"
+        ],
+        "prompt_list": [
+          "In the Modern Kitchen, the sleek oven and vibrant kettle create a harmonious blend of function and style against a marbled backsplash.",
+          "In the Modern Kitchen, the sleek oven and vibrant kettle create a harmonious blend of function and style against a marbled backsplash."
+        ]
+      },
+      "manual_review": "pending",
+      "camera_adapter": "pending; source uses symbolic commands, not calibrated camera matrices"
+    },
+    {
+      "id": "ws-indoor-011",
+      "split": "test",
+      "source_scene": "static/photorealistic/indoor/living_spaces/013.jpg",
+      "category": "Living spaces",
+      "local_image": "images/011.jpg",
+      "image_sha256": "1e2ac4641127cb290e4232af5f0beca1af2d1c60efca5916f6e645fabf4d247d",
+      "text": "Modern Living Area: A sleek gray sofa and minimalist glass coffee table are bathed in soft light, creating a serene and contemporary space.",
+      "original": {
+        "visual_movement": "static",
+        "visual_style": "photorealistic",
+        "scene_type": "indoor",
+        "style": "photorealistic",
+        "category": "Living spaces",
+        "content": "Modern Living Area, sofa, glass coffee table",
+        "image": "static/photorealistic/indoor/living_spaces/013.jpg",
+        "camera_path": [
+          "orbit_right"
+        ],
+        "content_list": [
+          "Modern Living Area, sofa, glass coffee table",
+          "Modern Living Area, sofa, glass coffee table"
+        ],
+        "prompt_list": [
+          "Modern Living Area: A sleek gray sofa and minimalist glass coffee table are bathed in soft light, creating a serene and contemporary space.",
+          "Modern Living Area: A sleek gray sofa and minimalist glass coffee table are bathed in soft light, creating a serene and contemporary space."
+        ]
+      },
+      "manual_review": "pending",
+      "camera_adapter": "pending; source uses symbolic commands, not calibrated camera matrices"
+    },
+    {
+      "id": "ws-indoor-012",
+      "split": "test",
+      "source_scene": "static/photorealistic/indoor/passageways/072.jpg",
+      "category": "Passageways",
+      "local_image": "images/012.jpg",
+      "image_sha256": "59c3d241371bc595f901aa3d9c842697bf65eddcb31048adae9d90082371c549",
+      "text": "In the \"Modern Corridor,\" ambient light from the large windows casts a soft glow on the sleek wooden floor, creating a serene and spacious atmosphere.",
+      "original": {
+        "visual_movement": "static",
+        "visual_style": "photorealistic",
+        "scene_type": "indoor",
+        "style": "photorealistic",
+        "category": "Passageways",
+        "content": "Modern Corridor, Wooden Floor",
+        "image": "static/photorealistic/indoor/passageways/072.jpg",
+        "camera_path": [
+          "push_in"
+        ],
+        "content_list": [
+          "Modern Corridor, Wooden Floor, Glass Windows",
+          "Modern Corridor, Wooden Floor, Glass Windows"
+        ],
+        "prompt_list": [
+          "In the \"Modern Corridor,\" ambient light from the large windows casts a soft glow on the sleek wooden floor, creating a serene and spacious atmosphere.",
+          "In the \"Modern Corridor,\" ambient light from the large windows casts a soft glow on the sleek wooden floor, creating a serene and spacious atmosphere."
+        ]
+      },
+      "manual_review": "pending",
+      "camera_adapter": "pending; source uses symbolic commands, not calibrated camera matrices"
+    },
+    {
+      "id": "ws-indoor-013",
+      "split": "test",
+      "source_scene": "static/photorealistic/indoor/public_spaces/036.jpg",
+      "category": "Public spaces",
+      "local_image": "images/013.jpg",
+      "image_sha256": "dbeec836ae108b04fb0acc3db86cc66e2a206bf9b330d55b988352d3cc691576",
+      "text": "In the \"Historical Weaving Exhibit,\" intricate punch cards dangle from an imposing wooden loom, showcasing the art of traditional textile creation.",
+      "original": {
+        "visual_movement": "static",
+        "visual_style": "photorealistic",
+        "scene_type": "indoor",
+        "style": "photorealistic",
+        "category": "Public spaces",
+        "content": "Historical Weaving Exhibit, Punch Cards, Loom",
+        "image": "static/photorealistic/indoor/public_spaces/036.jpg",
+        "camera_path": [
+          "orbit_left"
+        ],
+        "content_list": [
+          "Historical Weaving Exhibit, Punch Cards, Loom",
+          "Historical Weaving Exhibit, Punch Cards, Loom"
+        ],
+        "prompt_list": [
+          "In the \"Historical Weaving Exhibit,\" intricate punch cards dangle from an imposing wooden loom, showcasing the art of traditional textile creation.",
+          "In the \"Historical Weaving Exhibit,\" intricate punch cards dangle from an imposing wooden loom, showcasing the art of traditional textile creation."
+        ]
+      },
+      "manual_review": "pending",
+      "camera_adapter": "pending; source uses symbolic commands, not calibrated camera matrices"
+    },
+    {
+      "id": "ws-indoor-014",
+      "split": "test",
+      "source_scene": "static/photorealistic/indoor/workspaces/032.jpg",
+      "category": "Workspaces",
+      "local_image": "images/014.jpg",
+      "image_sha256": "a9c2c804468a548cc3c3de0b8878eaa4f5747a6561a80adf523ebb082007c71e",
+      "text": "In the Modern Office Space, a sleek desk and organized bookshelf create a vibrant and professional atmosphere.",
+      "original": {
+        "visual_movement": "static",
+        "visual_style": "photorealistic",
+        "scene_type": "indoor",
+        "style": "photorealistic",
+        "category": "Workspaces",
+        "content": "Modern Office Space, desk, bookshelf",
+        "image": "static/photorealistic/indoor/workspaces/032.jpg",
+        "camera_path": [
+          "push_in"
+        ],
+        "content_list": [
+          "Modern Office Space, desk, bookshelf",
+          "Modern Office Space, desk, bookshelf"
+        ],
+        "prompt_list": [
+          "In the Modern Office Space, a sleek desk and organized bookshelf create a vibrant and professional atmosphere.",
+          "In the Modern Office Space, a sleek desk and organized bookshelf create a vibrant and professional atmosphere."
+        ]
+      },
+      "manual_review": "pending",
+      "camera_adapter": "pending; source uses symbolic commands, not calibrated camera matrices"
+    },
+    {
+      "id": "ws-indoor-015",
+      "split": "test",
+      "source_scene": "static/photorealistic/indoor/dining_spaces/052.jpg",
+      "category": "Dining spaces",
+      "local_image": "images/015.jpg",
+      "image_sha256": "52896c4df9f1dc4b021eb97348fb53bf333681195e38f20edc72565b0395cd5b",
+      "text": "In the Modern Kitchen Space, sleek hanging lights cast a soft glow over the minimalist kitchen island.",
+      "original": {
+        "visual_movement": "static",
+        "visual_style": "photorealistic",
+        "scene_type": "indoor",
+        "style": "photorealistic",
+        "category": "Dining spaces",
+        "content": "Modern Kitchen Space, kitchen island, hanging lights",
+        "image": "static/photorealistic/indoor/dining_spaces/052.jpg",
+        "camera_path": [
+          "orbit_left"
+        ],
+        "content_list": [
+          "Modern Kitchen Space, kitchen island, hanging lights",
+          "Modern Kitchen Space, kitchen island, hanging lights"
+        ],
+        "prompt_list": [
+          "In the Modern Kitchen Space, sleek hanging lights cast a soft glow over the minimalist kitchen island.",
+          "In the Modern Kitchen Space, sleek hanging lights cast a soft glow over the minimalist kitchen island."
+        ]
+      },
+      "manual_review": "pending",
+      "camera_adapter": "pending; source uses symbolic commands, not calibrated camera matrices"
+    },
+    {
+      "id": "ws-indoor-016",
+      "split": "test",
+      "source_scene": "static/photorealistic/indoor/living_spaces/028.jpg",
+      "category": "Living spaces",
+      "local_image": "images/016.jpg",
+      "image_sha256": "6968faf4b7786743fcee883a6ec97f0f449a65d8a37f56d9018a05a5db64c48f",
+      "text": "In the Modern Living Room, sunlight streams through large windows onto a cozy sofa and vibrant potted plant, creating a serene atmosphere.",
+      "original": {
+        "visual_movement": "static",
+        "visual_style": "photorealistic",
+        "scene_type": "indoor",
+        "style": "photorealistic",
+        "category": "Living spaces",
+        "content": "Modern Living Room, Sofa, Potted Plant",
+        "image": "static/photorealistic/indoor/living_spaces/028.jpg",
+        "camera_path": [
+          "orbit_left"
+        ],
+        "content_list": [
+          "Modern Living Room, Sofa, Potted Plant",
+          "Modern Living Room, Sofa, Potted Plant"
+        ],
+        "prompt_list": [
+          "In the Modern Living Room, sunlight streams through large windows onto a cozy sofa and vibrant potted plant, creating a serene atmosphere.",
+          "In the Modern Living Room, sunlight streams through large windows onto a cozy sofa and vibrant potted plant, creating a serene atmosphere."
+        ]
+      },
+      "manual_review": "pending",
+      "camera_adapter": "pending; source uses symbolic commands, not calibrated camera matrices"
+    },
+    {
+      "id": "ws-indoor-017",
+      "split": "test",
+      "source_scene": "static/photorealistic/indoor/passageways/037.jpg",
+      "category": "Passageways",
+      "local_image": "images/017.jpg",
+      "image_sha256": "2fdea103162bcd74cef44052c935d81ace3fee07b78c011ce4bd544f0653d434",
+      "text": "Graffiti Tunnel: Vibrantly spray-painted walls and tiled surfaces stretch endlessly under soft, neon lighting.",
+      "original": {
+        "visual_movement": "static",
+        "visual_style": "photorealistic",
+        "scene_type": "indoor",
+        "style": "photorealistic",
+        "category": "Passageways",
+        "content": "Graffiti Tunnel, graffiti, tiled walls",
+        "image": "static/photorealistic/indoor/passageways/037.jpg",
+        "camera_path": [
+          "orbit_right"
+        ],
+        "content_list": [
+          "Graffiti Tunnel, graffiti, tiled walls",
+          "Graffiti Tunnel, graffiti, tiled walls"
+        ],
+        "prompt_list": [
+          "Graffiti Tunnel: Vibrantly spray-painted walls and tiled surfaces stretch endlessly under soft, neon lighting.",
+          "Graffiti Tunnel: Vibrantly spray-painted walls and tiled surfaces stretch endlessly under soft, neon lighting."
+        ]
+      },
+      "manual_review": "pending",
+      "camera_adapter": "pending; source uses symbolic commands, not calibrated camera matrices"
+    }
+  ]
+}

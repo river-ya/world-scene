@@ -1,0 +1,26 @@
+{
+  "edition": "public-source",
+  "version": "0.8.1",
+  "derived_from_version": "0.8.0",
+  "derived_from_commit": "68c3cf9110c7d134ec349b422c22b60082829442",
+  "preserved": [
+    "model weights revisions",
+    "camera recipes",
+    "input image hashes",
+    "upstream code hashes"
+  ],
+  "excluded": [
+    "original Git history",
+    "local configuration",
+    "weights and datasets",
+    "experiment results and logs",
+    "temporary files"
+  ],
+  "additional_license": {
+    "path": "upstream/LucidDreamer/submodules/simple-knn/LICENSE.md",
+    "url": "https://gitlab.inria.fr/bkerbl/simple-knn/-/raw/main/LICENSE.md",
+    "retrieved": "2026-10-23",
+    "sha256": "c5ba70a2194af2aefe85dfe3da68608dcb3abd21a3aa53b55aa297c2f0b60eb3",
+    "note": "License supplied from original simple-knn project; absent from pinned LucidDreamer vendored subset. No source code changed."
+  }
+}
