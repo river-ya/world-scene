@@ -1,0 +1,62 @@
+{
+  "protocol": "paired-room40-v1",
+  "version": "0.10.0",
+  "commit": "b2f217072acb6155f65cafbca0a0b77087a4f1f1",
+  "lucid_reference": "lucid-00-74280-0",
+  "flash_input_sha256": "4b39ab8304aadab08fba0251bdc24159c69822b6d6e0dd40839e15512772c50b",
+  "image_pixel_match": true,
+  "user_text": "A white coffee table with pillows on it is shown in a living room.",
+  "seed_integer": 0,
+  "resolution": [
+    24,
+    480,
+    704
+  ],
+  "generation_cameras": 24,
+  "render_frames": 346,
+  "fps": 15,
+  "motion": "fixed_center_left_40_degrees_smoothstep",
+  "anchor_index": 0,
+  "intrinsics_match": true,
+  "actual_normalized_generation_and_dense_camera_match": true,
+  "target_gpu": "RTX 4090",
+  "metric_scale_alignment": "not_established",
+  "planned_common_render_background_rgb": [
+    1,
+    1,
+    1
+  ],
+  "companion_sha256": {
+    "job.sh": "e37667a525e2ae593b7e7844916b6a05cdd7d331a90a150345883d4779eb8ad2",
+    "pair.py": "31b04e0dfd065b507f1c0e60e7fe09736a50a245205e3abd4c167095b81fd0ed",
+    "run.sh": "3ae1578730c9ececd058edbb71d763148858cc20cd5b0bbf84318ea80ccb8021",
+    "render_lucid.py": "6e8a465c79e7d9a786b8e2ec541973643e300aaf4355e917ad43eb34a0632fdf",
+    "config.sh": "8560f3a23971e72101684fe7c01a4ba9f3647caa796d23902fcf7fb9fe46d2a7"
+  },
+  "model_specific_differences": {
+    "FlashWorld": "native checkpoint/sampler/precision; official internal [Static] prefix; T5/VAE offload",
+    "LucidDreamer": "archived SD1.5 inpaint 50 steps/view, ZoeDepth, 2990 Gaussian optimization steps",
+    "seed": "same integer does not imply identical latent noise across models",
+    "scope": "one development example; not a general model ranking or a strict runtime benchmark"
+  },
+  "flash_run": "flash-room40-74470",
+  "flash_gpu": "NVIDIA GeForce RTX 4090",
+  "flash_runtime": {
+    "seconds_including_model_load": 3683.048337307002,
+    "gpu_peak_allocated_bytes": 12465346560,
+    "gpu_peak_reserved_bytes": 15766388736,
+    "cpu_peak_rss_kib_linux": 70868784
+  },
+  "lucid_phases": {
+    "model_load": 37.1285630610073,
+    "dream_and_align": 1871.4290889510012,
+    "gaussian_optimization": 40.33132457899046,
+    "render_export": 9.307719481992535
+  },
+  "common_render_background_rgb": [
+    1,
+    1,
+    1
+  ],
+  "display": "left=LucidDreamer; right=FlashWorld; frame synchronized; no temporal retiming"
+}

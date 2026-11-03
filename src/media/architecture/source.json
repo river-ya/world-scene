@@ -1,0 +1,18 @@
+{
+  "FlashWorld": {
+    "source": "FlashWorld_Architecture_v0.10.0.svg",
+    "sha256": "0efb291df7c691838d110a3c6bdc79fc95be4653edbbd2d1140867e7bc50b4a5",
+    "width": "1500",
+    "height": "1840",
+    "viewBox": "0 0 1500 1840",
+    "import": "Original SVG copied byte-for-byte; no conversion or redraw"
+  },
+  "LucidDreamer": {
+    "source": "LucidDreamer_Architecture_v0.10.0.svg",
+    "sha256": "2b55213ebb3585349465cba7d9ad519cab3ab431cc624ab822bf80b41d54bd30",
+    "width": "1500",
+    "height": "2380",
+    "viewBox": "0 0 1500 2380",
+    "import": "Original SVG copied byte-for-byte; no conversion or redraw"
+  }
+}

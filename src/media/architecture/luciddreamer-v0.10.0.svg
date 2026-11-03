@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="2380" viewBox="0 0 1500 2380" role="img" aria-label="LucidDreamer architecture: sequential point-cloud expansion, Stable Diffusion inpainting, depth alignment, Gaussian optimization and scene rendering">
+<defs><marker id="dark-arrow" markerWidth="13" markerHeight="13" refX="10" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6.5 L0,13 Z" fill="#281C1A"/></marker><marker id="warm-arrow" markerWidth="13" markerHeight="13" refX="10" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6.5 L0,13 Z" fill="#8B4543"/></marker></defs>
+<rect x="0" y="0" width="1500" height="2380" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0"/>
+<rect x="80" y="59" width="15" height="76" rx="3" fill="#8B4543" stroke="#8B4543" stroke-width="0"/>
+<text x="116" y="103" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="50" font-weight="790" fill="#281C1A">LucidDreamer</text>
+<text x="116" y="145" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="520" fill="#281C1A">Sequential Scene Generation and Gaussian Optimization</text>
+<path d="M80 173 L1420 173" fill="none" stroke="#281C1A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="70" y="193" width="394" height="293" rx="13" fill="#FFF8F5" stroke="#D8AFA2" stroke-width="2.7"/>
+<rect x="83" y="207" width="150" height="43" rx="8" fill="#F3CFC4" stroke="#281C1A" stroke-width="3.4"/>
+<text x="158" y="237" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="790" fill="#281C1A">IMAGE</text>
+<rect x="552" y="193" width="394" height="293" rx="13" fill="#FFF8F2" stroke="#DAB19C" stroke-width="2.7"/>
+<rect x="565" y="207" width="150" height="43" rx="8" fill="#F0BA9E" stroke="#281C1A" stroke-width="3.4"/>
+<text x="640" y="237" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="790" fill="#281C1A">TEXT</text>
+<rect x="1034" y="193" width="394" height="293" rx="13" fill="#FFFAF2" stroke="#D7B794" stroke-width="2.7"/>
+<rect x="1047" y="207" width="150" height="43" rx="8" fill="#EBC792" stroke="#281C1A" stroke-width="3.4"/>
+<text x="1122" y="237" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="790" fill="#281C1A">CAMERA</text>
+<rect x="88" y="270" width="360" height="70" rx="14" fill="#FFFFFF" stroke="#281C1A" stroke-width="4"/>
+<text x="268.0" y="315.15" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="650" fill="#281C1A">RGB Image</text>
+<path d="M268 340 L268 376" fill="none" stroke="#281C1A" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#dark-arrow)"/>
+<rect x="88" y="376" width="360" height="83" rx="14" fill="#F3CFC4" stroke="#281C1A" stroke-width="4"/>
+<text x="268.0" y="407.5" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="650" fill="#281C1A">ZoeDepth</text>
+<text x="268.0" y="443.5" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="530" fill="#281C1A">Initial Colored Point Cloud</text>
+<rect x="570" y="270" width="360" height="70" rx="14" fill="#FFFFFF" stroke="#281C1A" stroke-width="4"/>
+<text x="750.0" y="315.15" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="650" fill="#281C1A">Text Prompt</text>
+<path d="M750 340 L750 376" fill="none" stroke="#281C1A" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#dark-arrow)"/>
+<rect x="570" y="376" width="360" height="83" rx="14" fill="#F0BA9E" stroke="#281C1A" stroke-width="4"/>
+<text x="750.0" y="427.3" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="650" fill="#281C1A">CLIP Text Encoder</text>
+<rect x="1052" y="270" width="360" height="70" rx="14" fill="#FFFFFF" stroke="#281C1A" stroke-width="4"/>
+<text x="1232.0" y="315.15" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="650" fill="#281C1A">Camera Poses</text>
+<path d="M1232 340 L1232 376" fill="none" stroke="#281C1A" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#dark-arrow)"/>
+<rect x="1052" y="376" width="360" height="83" rx="14" fill="#EBC792" stroke="#281C1A" stroke-width="4"/>
+<text x="1232.0" y="427.3" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="650" fill="#281C1A">Generation Views</text>
+<text x="750" y="640" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="780" fill="#8B4543">STAGE I  ·  SEQUENTIAL SCENE EXPANSION</text>
+<rect x="450" y="694" width="600" height="84" rx="14" fill="#F3CFC4" stroke="#281C1A" stroke-width="4"/>
+<text x="750.0" y="746.15" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="650" fill="#281C1A">Point Cloud Projection + Mask</text>
+<path d="M268 459 L268 725 L450 725" fill="none" stroke="#281C1A" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#dark-arrow)"/>
+<path d="M1232 459 L1232 748 L1050 748" fill="none" stroke="#281C1A" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#dark-arrow)"/>
+<path d="M750 778 L750 844" fill="none" stroke="#281C1A" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#dark-arrow)"/>
+<rect x="450" y="844" width="600" height="86" rx="14" fill="#F0BA9E" stroke="#281C1A" stroke-width="4"/>
+<text x="750.0" y="898.55" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="33" font-weight="650" fill="#281C1A">SD1.5 Inpainting</text>
+<path d="M750 459 L750 496 L1380 496 L1380 887 L1050 887" fill="none" stroke="#FFFFFF" stroke-width="13.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M750 459 L750 496 L1380 496 L1380 887 L1050 887" fill="none" stroke="#8B4543" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#warm-arrow)"/>
+<path d="M750 930 L750 996" fill="none" stroke="#281C1A" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#dark-arrow)"/>
+<rect x="450" y="996" width="600" height="86" rx="14" fill="#F3CFC4" stroke="#281C1A" stroke-width="4"/>
+<text x="750.0" y="1049.5" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="650" fill="#281C1A">ZoeDepth Depth Estimation</text>
+<path d="M750 1082 L750 1148" fill="none" stroke="#281C1A" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#dark-arrow)"/>
+<rect x="450" y="1148" width="600" height="86" rx="14" fill="#F0BA9E" stroke="#281C1A" stroke-width="4"/>
+<text x="750.0" y="1201.15" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="650" fill="#281C1A">Depth Alignment + Backprojection</text>
+<path d="M750 1234 L750 1300" fill="none" stroke="#281C1A" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#dark-arrow)"/>
+<rect x="450" y="1300" width="600" height="89" rx="14" fill="#CB8272" stroke="#281C1A" stroke-width="4"/>
+<text x="750.0" y="1355.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="650" fill="#281C1A">Colored Point Cloud Fusion</text>
+<path d="M450 1344 L65 1344 L65 766 L450 766" fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M450 1344 L65 1344 L65 766 L450 766" fill="none" stroke="#8B4543" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#warm-arrow)"/>
+<text x="88" y="1040" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="720" fill="#8B4543">Next view</text>
+<text x="1110" y="1476" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="780" fill="#8B4543">STAGE II  ·  3D GAUSSIAN FITTING</text>
+<path d="M750 1389 L750 1510" fill="none" stroke="#281C1A" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M420 1510 L1080 1510" fill="none" stroke="#281C1A" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M420 1510 L420 1550" fill="none" stroke="#281C1A" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#dark-arrow)"/>
+<path d="M1080 1510 L1080 1550" fill="none" stroke="#281C1A" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#dark-arrow)"/>
+<rect x="166" y="1550" width="508" height="89" rx="14" fill="#F3CFC4" stroke="#281C1A" stroke-width="4"/>
+<text x="420.0" y="1604.65" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="650" fill="#281C1A">Gaussian Initialization</text>
+<rect x="826" y="1550" width="508" height="89" rx="14" fill="#EBC792" stroke="#281C1A" stroke-width="4"/>
+<text x="1080.0" y="1603.95" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="650" fill="#281C1A">Training-View Reprojection</text>
+<path d="M420 1639 L420 1696 L650 1696 L650 1735" fill="none" stroke="#281C1A" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#dark-arrow)"/>
+<path d="M1080 1639 L1080 1696 L850 1696 L850 1735" fill="none" stroke="#281C1A" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#dark-arrow)"/>
+<rect x="450" y="1735" width="600" height="99" rx="14" fill="#BB716A" stroke="#281C1A" stroke-width="4"/>
+<text x="750.0" y="1774.5" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="31" font-weight="750" fill="#FFFFFF">3D Gaussian Optimization</text>
+<text x="750.0" y="1810.5" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="530" fill="#FFFFFF">Differentiable rendering + RGB supervision</text>
+<path d="M750 1834 L750 1891" fill="none" stroke="#281C1A" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#dark-arrow)"/>
+<rect x="450" y="1891" width="600" height="96" rx="14" fill="#8B4543" stroke="#281C1A" stroke-width="4"/>
+<text x="750.0" y="1949.85" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="31" font-weight="770" fill="#FFFFFF">Optimized 3D Gaussian Scene</text>
+<path d="M750 1987 L750 2040" fill="none" stroke="#281C1A" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#dark-arrow)"/>
+<rect x="500" y="2040" width="500" height="78" rx="14" fill="#EBC792" stroke="#281C1A" stroke-width="4"/>
+<text x="750.0" y="2089.15" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="650" fill="#281C1A">Save PLY Scene</text>
+<path d="M750 2118 L750 2172" fill="none" stroke="#281C1A" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#dark-arrow)"/>
+<rect x="450" y="2172" width="600" height="96" rx="14" fill="#F0BA9E" stroke="#281C1A" stroke-width="4"/>
+<text x="750.0" y="2210.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="650" fill="#281C1A">Reload PLY + Gaussian Rendering</text>
+<text x="750.0" y="2246.0" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="530" fill="#281C1A">Novel-view video (MP4)</text>
+<path d="M1412 418 L1450 418 L1450 2220 L1050 2220" fill="none" stroke="#281C1A" stroke-width="4.0" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="12 9" marker-end="url(#dark-arrow)"/>
+</svg>

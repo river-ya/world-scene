@@ -1,0 +1,126 @@
+{
+  "name": "WorldModels Baseline",
+  "basePath": "/world-scene/",
+  "heroCaseId": "kitchen",
+  "authors": [],
+  "affiliations": [],
+  "links": {
+    "code": "",
+    "paper": ""
+  },
+  "evaluation": null,
+  "copy": {
+    "eyebrow": "室内三维场景生成 · 科研项目展示",
+    "heroTitle": "从一张图像，看到更多视角。",
+    "subtitle": "单张图像与文本输入 → 室内三维场景生成 → 新视角视频",
+    "intro": "探索图像与文本如何形成三维场景，并沿指定相机轨迹展示真实实验结果。",
+    "viewResults": "查看结果 ↗",
+    "selected": "精选结果",
+    "input": "原始输入图像",
+    "generated": "生成的新视角",
+    "overviewTitle": "从图像到三维场景",
+    "overviewText": "研究单图与文本条件下的场景生成，并从新的相机位置渲染三维表示。",
+    "scope": "当前范围为静态场景生成与新视角渲染。相机运动不代表动态世界模拟或未来状态预测。",
+    "pipeline": [
+      "输入图像与文本",
+      "场景生成",
+      "三维表示",
+      "相机轨迹渲染"
+    ],
+    "pipelineNote": "这是共同任务流程；各基线保留自己的生成机制。",
+    "galleryTitle": "选择输入图像",
+    "galleryText": "点击图片或使用左右箭头，下方将自动播放对应的新视角视频。",
+    "allScenes": "全部场景",
+    "collectionNote": "",
+    "prompt": "输入 text",
+    "settings": "实验设置与素材来源",
+    "play": "播放视频",
+    "pause": "暂停视频",
+    "expand": "放大查看 ↗",
+    "pending": "该结果正在准备中。",
+    "unavailable": "该结果暂不可用。",
+    "failed": "媒体加载失败，请选择其他结果或重试。",
+    "retry": "重试",
+    "buffering": "正在缓冲…",
+    "ready": "预渲染视频 · 静音 · 循环播放",
+    "missingInput": "输入图像待补充。",
+    "missingPrompt": "完整输入文本待补充。",
+    "noResults": "当前选择暂无可播放结果。",
+    "comparisonTitle": "相同输入，不同基线",
+    "comparisonAligned": "采样协议已对齐；两段视频均就绪后可同步播放。",
+    "comparisonUnaligned": "仅供定性并排观察：相机轨迹、视场角或采样时刻尚未确认对齐，已禁用同步播放。",
+    "comparisonLoading": "等待两段视频加载…",
+    "comparisonError": "对比视频加载失败，请刷新页面重试。",
+    "syncPlay": "同步播放",
+    "syncPause": "同步暂停",
+    "restart": "从头开始",
+    "timeline": "共同时间轴",
+    "methodTitle": "方法与实验背景",
+    "methodIntro": "本项目复现并适配上游生成方法，保存输入快照，分析室内场景的相机轨迹渲染。",
+    "adaptationTitle": "本项目的工作",
+    "adaptationText": "可复现运行记录、版本化环境、室内输入准备、相机模板适配和可追溯结果展示。",
+    "limitationsTitle": "",
+    "limitations": [],
+    "resourcesTitle": "论文与素材来源",
+    "resourcesText": "输入来自 FlashWorld 官方示例和 WorldScore 室内开发子集。新增实验保留 v0.6.0、v0.8.0、v0.9.0 与 v0.10.0 的真实版本；LucidDreamer 原始结果与 room40 配对实验的白底重渲染分别标注。",
+    "resources": [
+      {
+        "label": "FlashWorld · 论文",
+        "url": "https://arxiv.org/abs/2510.13678"
+      },
+      {
+        "label": "LucidDreamer · 论文",
+        "url": "https://arxiv.org/abs/2311.13384"
+      },
+      {
+        "label": "WorldScore · 论文与项目",
+        "url": "https://haoyi-duan.github.io/WorldScore/"
+      },
+      {
+        "label": "WorldScore · 来源数据集",
+        "url": "https://huggingface.co/datasets/Howieeeee/WorldScore"
+      },
+      {
+        "label": "素材来源与校验记录 ↗",
+        "url": "data/provenance.json"
+      }
+    ],
+    "footer": "静态三维场景 · 真实渲染视频 · 可追溯实验记录",
+    "nav": {
+      "overview": "项目概述",
+      "gallery": "结果展示",
+      "comparison": "方法对比",
+      "method": "模型方法",
+      "evaluation": "定量评测"
+    },
+    "collections": {
+      "featured": "精选案例",
+      "all": "完整案例集合"
+    },
+    "ui": {
+      "code": "项目代码 ↗",
+      "paper": "项目论文 ↗",
+      "officialCode": "官方代码 ↗",
+      "readyCases": "个可展示案例",
+      "sourceImages": "张来源图像",
+      "baselines": "个可用基线",
+      "sceneCategories": "场景分类",
+      "chooseScene": "选择场景",
+      "resultSelector": "选择模型与预渲染轨迹",
+      "comparisonSelector": "选择对比输入",
+      "evaluationTitle": "定量结果",
+      "evaluationSource": "评测来源 ↗",
+      "method": "方法",
+      "menu": "菜单",
+      "close": "关闭 ×",
+      "skip": "跳转到正文",
+      "singleView": "单视角",
+      "collectionCount": "{title} · 共 {count} 个可展示案例",
+      "previousImage": "上一张输入图像",
+      "nextImage": "下一张输入图像",
+      "selectImage": "选择输入图像"
+    },
+    "autoplayBlocked": "浏览器阻止了自动播放，请点击“播放视频”。"
+  },
+  "language": "zh-CN"
+}

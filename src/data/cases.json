@@ -1,0 +1,1719 @@
+[
+  {
+    "id": "room",
+    "sourceImageId": "official-3",
+    "title": "客厅",
+    "category": "起居空间",
+    "inputImage": "media/room/input.png",
+    "prompt": "A white coffee table with pillows on it is shown in a living room.",
+    "source": "FlashWorld 官方示例3",
+    "featured": true,
+    "results": [
+      {
+        "method": "FlashWorld",
+        "version": "v0.1.3",
+        "trajectory": "官方示例3相机轨迹",
+        "video": "media/room/video.mp4",
+        "poster": "media/room/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "cameraTemplate": "official-3",
+          "sampledCameras": 24,
+          "inputAnchorIndex": 3,
+          "seed": 0,
+          "inputResolution": [
+            704,
+            480
+          ],
+          "normalization": "upstream native",
+          "calibrated": "Official example cameras",
+          "upstreamCommit": "424db4487de308a39e5137afbe85e7568a96193f"
+        }
+      }
+    ],
+    "section": "flashworld"
+  },
+  {
+    "id": "studio",
+    "sourceImageId": "official-5",
+    "title": "音响房间",
+    "category": "音响房间",
+    "inputImage": "media/studio/input.png",
+    "prompt": "A room with sound equipment.",
+    "source": "FlashWorld 官方示例5",
+    "featured": true,
+    "results": [
+      {
+        "method": "FlashWorld",
+        "version": "v0.1.3",
+        "trajectory": "官方示例5相机轨迹",
+        "video": "media/studio/video.mp4",
+        "poster": "media/studio/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "cameraTemplate": "official-5",
+          "sampledCameras": 24,
+          "inputAnchorIndex": 9,
+          "seed": 0,
+          "inputResolution": [
+            704,
+            480
+          ],
+          "normalization": "upstream native",
+          "calibrated": "Official example cameras",
+          "upstreamCommit": "424db4487de308a39e5137afbe85e7568a96193f"
+        }
+      }
+    ],
+    "section": "flashworld"
+  },
+  {
+    "id": "kitchen",
+    "sourceImageId": "ws-indoor-000",
+    "title": "现代厨房",
+    "category": "厨房",
+    "inputImage": "media/kitchen/input.jpg",
+    "prompt": "In the Modern Kitchen, the sleek wooden cabinets and stainless steel oven gleam under soft lighting, with a spacious layout that invites culinary creativity.",
+    "source": "WorldScore 室内开发子集",
+    "featured": true,
+    "results": [
+      {
+        "method": "FlashWorld",
+        "version": "v0.4.0",
+        "trajectory": "官方示例5相机轨迹",
+        "video": "media/kitchen/video.mp4",
+        "poster": "media/kitchen/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "cameraTemplate": "official-5",
+          "sampledCameras": 24,
+          "inputAnchorIndex": 9,
+          "seed": 0,
+          "inputResolution": [
+            1080,
+            721
+          ],
+          "normalization": "upstream_per_trajectory",
+          "calibrated": false,
+          "upstreamCommit": "424db4487de308a39e5137afbe85e7568a96193f"
+        }
+      }
+    ],
+    "section": "flashworld"
+  },
+  {
+    "id": "flash-varied-3",
+    "section": "flashworld",
+    "sourceImageId": "ws-indoor-001",
+    "title": "客餐厅",
+    "category": "FlashWorld",
+    "inputImage": "media/flash-varied-3/input.jpg",
+    "prompt": "In the Modern Living Space, a sleek armchair and a stylish dining table create a harmonious blend of comfort and elegance.",
+    "source": "static/photorealistic/indoor/living_spaces/029.jpg",
+    "featured": true,
+    "results": [
+      {
+        "method": "FlashWorld",
+        "version": "v0.6.0",
+        "trajectory": "客厅短轨迹",
+        "video": "media/flash-varied-3/video.mp4",
+        "poster": "media/flash-varied-3/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 9,
+          "cameraProfile": {
+            "campaign": "indoor-showcase-varied-v3",
+            "index": 3,
+            "seed": 0,
+            "source_recipe_file_sha256": "a76fb9c3d75b4e25669dd8eb687f2bb3c0302f2dc86959eadbb1e53fb66557a9",
+            "camera_profile": "room_short",
+            "camera_profile_stats": {
+              "max_rotation_deg": 30.275643514213364,
+              "max_translation_model_units": 0.697970653981009,
+              "export_scale": 3.481835354645268
+            },
+            "camera_recipe_file_sha256": "5a7dacef8afbb38d1530894e198bcd7c7edb108fa12eb5bd89a9e8e5ca1b87a5",
+            "camera_template_sha256": "6ebc75f63c9e6c36eb47335ece305679d6f2ef07fcf3f0936fdceff9e2dbf45c",
+            "profile_gpu_validation": "studio_template_only; transformed_profiles_pending",
+            "normalization": "upstream_per_trajectory",
+            "input_anchor_video_seconds": 9,
+            "comparison": "frozen_development_image_with_assigned_camera_profile"
+          },
+          "metricScaleAlignment": "not established"
+        }
+      }
+    ]
+  },
+  {
+    "id": "flash-varied-4",
+    "section": "flashworld",
+    "sourceImageId": "ws-indoor-002",
+    "title": "废弃走廊",
+    "category": "FlashWorld",
+    "inputImage": "media/flash-varied-4/input.jpg",
+    "prompt": "In the Abandoned Hallway, scattered debris and damaged walls create an eerie, dilapidated atmosphere.",
+    "source": "static/photorealistic/indoor/passageways/021.jpg",
+    "featured": true,
+    "results": [
+      {
+        "method": "FlashWorld",
+        "version": "v0.6.0",
+        "trajectory": "音响房间轨迹",
+        "video": "media/flash-varied-4/video.mp4",
+        "poster": "media/flash-varied-4/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 9,
+          "cameraProfile": {
+            "campaign": "indoor-showcase-varied-v3",
+            "index": 4,
+            "seed": 0,
+            "source_recipe_file_sha256": "a76fb9c3d75b4e25669dd8eb687f2bb3c0302f2dc86959eadbb1e53fb66557a9",
+            "camera_profile": "studio",
+            "camera_profile_stats": {
+              "max_rotation_deg": 26.854625495841653,
+              "max_translation_model_units": 0.5568049041512775,
+              "export_scale": 2.8545157163993515
+            },
+            "camera_recipe_file_sha256": "5a7dacef8afbb38d1530894e198bcd7c7edb108fa12eb5bd89a9e8e5ca1b87a5",
+            "camera_template_sha256": "57818b6776e1116cc100ce80e67f944165585439bc51780da20577b737fec263",
+            "profile_gpu_validation": "studio_template_only; transformed_profiles_pending",
+            "normalization": "upstream_per_trajectory",
+            "input_anchor_video_seconds": 9,
+            "comparison": "frozen_development_image_with_assigned_camera_profile"
+          },
+          "metricScaleAlignment": "not established"
+        }
+      }
+    ]
+  },
+  {
+    "id": "flash-varied-5",
+    "section": "flashworld",
+    "sourceImageId": "ws-indoor-003",
+    "title": "历史图书馆",
+    "category": "FlashWorld",
+    "inputImage": "media/flash-varied-5/input.jpg",
+    "prompt": "In the Historic Library, towering bookshelves and a stone tablet display create an atmosphere of ancient wisdom and knowledge.",
+    "source": "static/photorealistic/indoor/public_spaces/040.jpg",
+    "featured": true,
+    "results": [
+      {
+        "method": "FlashWorld",
+        "version": "v0.6.0",
+        "trajectory": "音响房间镜像轨迹",
+        "video": "media/flash-varied-5/video.mp4",
+        "poster": "media/flash-varied-5/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 9,
+          "cameraProfile": {
+            "campaign": "indoor-showcase-varied-v3",
+            "index": 5,
+            "seed": 0,
+            "source_recipe_file_sha256": "a76fb9c3d75b4e25669dd8eb687f2bb3c0302f2dc86959eadbb1e53fb66557a9",
+            "camera_profile": "studio_mirrored",
+            "camera_profile_stats": {
+              "max_rotation_deg": 26.854625495841542,
+              "max_translation_model_units": 0.5568049041512775,
+              "export_scale": 2.8545157163993524
+            },
+            "camera_recipe_file_sha256": "5a7dacef8afbb38d1530894e198bcd7c7edb108fa12eb5bd89a9e8e5ca1b87a5",
+            "camera_template_sha256": "57818b6776e1116cc100ce80e67f944165585439bc51780da20577b737fec263",
+            "profile_gpu_validation": "studio_template_only; transformed_profiles_pending",
+            "normalization": "upstream_per_trajectory",
+            "input_anchor_video_seconds": 9,
+            "comparison": "frozen_development_image_with_assigned_camera_profile"
+          },
+          "metricScaleAlignment": "not established"
+        }
+      }
+    ]
+  },
+  {
+    "id": "flash-varied-6",
+    "section": "flashworld",
+    "sourceImageId": "ws-indoor-004",
+    "title": "现代办公室",
+    "category": "FlashWorld",
+    "inputImage": "media/flash-varied-6/input.png",
+    "prompt": "In the Modern Office, natural light filters through sheer curtains, softly illuminating the sleek desk and ergonomic chairs.",
+    "source": "static/photorealistic/indoor/workspaces/064.png",
+    "featured": true,
+    "results": [
+      {
+        "method": "FlashWorld",
+        "version": "v0.6.0",
+        "trajectory": "客厅短轨迹",
+        "video": "media/flash-varied-6/video.mp4",
+        "poster": "media/flash-varied-6/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 9,
+          "cameraProfile": {
+            "campaign": "indoor-showcase-varied-v3",
+            "index": 6,
+            "seed": 0,
+            "source_recipe_file_sha256": "a76fb9c3d75b4e25669dd8eb687f2bb3c0302f2dc86959eadbb1e53fb66557a9",
+            "camera_profile": "room_short",
+            "camera_profile_stats": {
+              "max_rotation_deg": 30.275643514213364,
+              "max_translation_model_units": 0.697970653981009,
+              "export_scale": 3.481835354645268
+            },
+            "camera_recipe_file_sha256": "5a7dacef8afbb38d1530894e198bcd7c7edb108fa12eb5bd89a9e8e5ca1b87a5",
+            "camera_template_sha256": "6ebc75f63c9e6c36eb47335ece305679d6f2ef07fcf3f0936fdceff9e2dbf45c",
+            "profile_gpu_validation": "studio_template_only; transformed_profiles_pending",
+            "normalization": "upstream_per_trajectory",
+            "input_anchor_video_seconds": 9,
+            "comparison": "frozen_development_image_with_assigned_camera_profile"
+          },
+          "metricScaleAlignment": "not established"
+        }
+      }
+    ]
+  },
+  {
+    "id": "flash-varied-7",
+    "section": "flashworld",
+    "sourceImageId": "ws-indoor-005",
+    "title": "第二间厨房",
+    "category": "FlashWorld",
+    "inputImage": "media/flash-varied-7/input.jpg",
+    "prompt": "In the Modern Kitchen scene, the stainless steel refrigerator stands beside the sleek kitchen island, under bright, overhead lighting.",
+    "source": "static/photorealistic/indoor/dining_spaces/037.jpg",
+    "featured": true,
+    "results": [
+      {
+        "method": "FlashWorld",
+        "version": "v0.6.0",
+        "trajectory": "音响房间镜像轨迹",
+        "video": "media/flash-varied-7/video.mp4",
+        "poster": "media/flash-varied-7/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 9,
+          "cameraProfile": {
+            "campaign": "indoor-showcase-varied-v3",
+            "index": 7,
+            "seed": 0,
+            "source_recipe_file_sha256": "a76fb9c3d75b4e25669dd8eb687f2bb3c0302f2dc86959eadbb1e53fb66557a9",
+            "camera_profile": "studio_mirrored",
+            "camera_profile_stats": {
+              "max_rotation_deg": 26.854625495841542,
+              "max_translation_model_units": 0.5568049041512775,
+              "export_scale": 2.8545157163993524
+            },
+            "camera_recipe_file_sha256": "5a7dacef8afbb38d1530894e198bcd7c7edb108fa12eb5bd89a9e8e5ca1b87a5",
+            "camera_template_sha256": "57818b6776e1116cc100ce80e67f944165585439bc51780da20577b737fec263",
+            "profile_gpu_validation": "studio_template_only; transformed_profiles_pending",
+            "normalization": "upstream_per_trajectory",
+            "input_anchor_video_seconds": 9,
+            "comparison": "frozen_development_image_with_assigned_camera_profile"
+          },
+          "metricScaleAlignment": "not established"
+        }
+      }
+    ]
+  },
+  {
+    "id": "flash-varied-8",
+    "section": "flashworld",
+    "sourceImageId": "official-3",
+    "title": "客厅 · 相机轨迹变体",
+    "category": "FlashWorld",
+    "inputImage": "media/flash-varied-8/input.png",
+    "prompt": "A white coffee table with pillows on it is shown in a living room.",
+    "source": "归档的官方示例输入",
+    "featured": true,
+    "results": [
+      {
+        "method": "FlashWorld",
+        "version": "v0.6.0",
+        "trajectory": "音响房间轨迹",
+        "video": "media/flash-varied-8/video.mp4",
+        "poster": "media/flash-varied-8/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 9,
+          "cameraProfile": {
+            "campaign": "indoor-showcase-varied-v3",
+            "index": 8,
+            "seed": 0,
+            "source_recipe_file_sha256": "a76fb9c3d75b4e25669dd8eb687f2bb3c0302f2dc86959eadbb1e53fb66557a9",
+            "camera_profile": "studio",
+            "camera_profile_stats": {
+              "max_rotation_deg": 26.854625495841653,
+              "max_translation_model_units": 0.5568049041512775,
+              "export_scale": 2.8545157163993515
+            },
+            "camera_recipe_file_sha256": "5a7dacef8afbb38d1530894e198bcd7c7edb108fa12eb5bd89a9e8e5ca1b87a5",
+            "camera_template_sha256": "57818b6776e1116cc100ce80e67f944165585439bc51780da20577b737fec263",
+            "profile_gpu_validation": "studio_template_only; transformed_profiles_pending",
+            "normalization": "upstream_per_trajectory",
+            "input_anchor_video_seconds": 9,
+            "comparison": "complete_camera_template_variant_of_room_b1"
+          },
+          "metricScaleAlignment": "not established"
+        }
+      }
+    ]
+  },
+  {
+    "id": "flash-varied-9",
+    "section": "flashworld",
+    "sourceImageId": "official-5",
+    "title": "音响房间 · 文本变体",
+    "category": "FlashWorld",
+    "inputImage": "media/flash-varied-9/input.png",
+    "prompt": "A room with sound equipment. Keep the visible sound equipment and room layout unchanged. Extend warm wooden acoustic wall panels into newly revealed areas while keeping the floor space unobstructed.",
+    "source": "归档的官方示例输入",
+    "featured": true,
+    "results": [
+      {
+        "method": "FlashWorld",
+        "version": "v0.6.0",
+        "trajectory": "音响房间轨迹",
+        "video": "media/flash-varied-9/video.mp4",
+        "poster": "media/flash-varied-9/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 9,
+          "cameraProfile": {
+            "campaign": "indoor-showcase-varied-v3",
+            "index": 9,
+            "seed": 0,
+            "source_recipe_file_sha256": "a76fb9c3d75b4e25669dd8eb687f2bb3c0302f2dc86959eadbb1e53fb66557a9",
+            "camera_profile": "studio",
+            "camera_profile_stats": {
+              "max_rotation_deg": 26.854625495841653,
+              "max_translation_model_units": 0.5568049041512775,
+              "export_scale": 2.8545157163993515
+            },
+            "camera_recipe_file_sha256": "5a7dacef8afbb38d1530894e198bcd7c7edb108fa12eb5bd89a9e8e5ca1b87a5",
+            "camera_template_sha256": "57818b6776e1116cc100ce80e67f944165585439bc51780da20577b737fec263",
+            "profile_gpu_validation": "studio_template_only; transformed_profiles_pending",
+            "normalization": "upstream_per_trajectory",
+            "input_anchor_video_seconds": 9,
+            "comparison": "text_only_variant_of_studio_b1"
+          },
+          "metricScaleAlignment": "not established"
+        }
+      }
+    ]
+  },
+  {
+    "id": "flash-wide-4",
+    "section": "flashworld",
+    "sourceImageId": "ws-indoor-002",
+    "title": "废弃走廊 · 大视角",
+    "category": "FlashWorld",
+    "inputImage": "media/flash-wide-4/input.jpg",
+    "prompt": "In the Abandoned Hallway, scattered debris and damaged walls create an eerie, dilapidated atmosphere.",
+    "source": "static/photorealistic/indoor/passageways/021.jpg",
+    "featured": true,
+    "results": [
+      {
+        "method": "FlashWorld",
+        "version": "v0.9.0",
+        "trajectory": "左转55°",
+        "video": "media/flash-wide-4/video.mp4",
+        "poster": "media/flash-wide-4/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 0,
+          "cameraProfile": {
+            "protocol": "gallery-wide-horizontal-v1",
+            "index": 4,
+            "scene": "hallway",
+            "case_name": "wideview-04",
+            "signed_yaw_deg": 55,
+            "yaw_direction": "left",
+            "max_rotation_deg": 55,
+            "translation_model_units": 0,
+            "image_anchor_index": 0,
+            "input_anchor_video_seconds": 0,
+            "reference_run": "gallery-04-71013-4",
+            "reference_gallery_profile": "studio",
+            "reference_scale_source": "same_gallery_profile_export_scale",
+            "recipe_file_sha256": "93e674d34fc7ab2a1558dd99f77af45dea520679868438dad542b21e26147802",
+            "source_gallery_recipe_sha256": "d19bea09c9a1a917960891b99d3a8945cad8bbef7f9267c1ac53488f45692860",
+            "seed": 0,
+            "gpu_visual_validation": "pending",
+            "comparison": "same_image_and_text; new_camera_protocol; not_single_factor_yaw_ablation_against_old_gallery",
+            "text_variant_warning": "index_9_is_not_text_only_comparison_against_original_studio"
+          },
+          "metricScaleAlignment": "not established"
+        }
+      }
+    ]
+  },
+  {
+    "id": "flash-wide-5",
+    "section": "flashworld",
+    "sourceImageId": "ws-indoor-003",
+    "title": "历史图书馆 · 大视角",
+    "category": "FlashWorld",
+    "inputImage": "media/flash-wide-5/input.jpg",
+    "prompt": "In the Historic Library, towering bookshelves and a stone tablet display create an atmosphere of ancient wisdom and knowledge.",
+    "source": "static/photorealistic/indoor/public_spaces/040.jpg",
+    "featured": true,
+    "results": [
+      {
+        "method": "FlashWorld",
+        "version": "v0.9.0",
+        "trajectory": "右转60°",
+        "video": "media/flash-wide-5/video.mp4",
+        "poster": "media/flash-wide-5/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 0,
+          "cameraProfile": {
+            "protocol": "gallery-wide-horizontal-v1",
+            "index": 5,
+            "scene": "library",
+            "case_name": "wideview-05",
+            "signed_yaw_deg": -60,
+            "yaw_direction": "right",
+            "max_rotation_deg": 60,
+            "translation_model_units": 0,
+            "image_anchor_index": 0,
+            "input_anchor_video_seconds": 0,
+            "reference_run": "gallery-05-71013-5",
+            "reference_gallery_profile": "studio_mirrored",
+            "reference_scale_source": "same_gallery_profile_export_scale",
+            "recipe_file_sha256": "93e674d34fc7ab2a1558dd99f77af45dea520679868438dad542b21e26147802",
+            "source_gallery_recipe_sha256": "d19bea09c9a1a917960891b99d3a8945cad8bbef7f9267c1ac53488f45692860",
+            "seed": 0,
+            "gpu_visual_validation": "pending",
+            "comparison": "same_image_and_text; new_camera_protocol; not_single_factor_yaw_ablation_against_old_gallery",
+            "text_variant_warning": "index_9_is_not_text_only_comparison_against_original_studio"
+          },
+          "metricScaleAlignment": "not established"
+        }
+      }
+    ]
+  },
+  {
+    "id": "flash-wide-6",
+    "section": "flashworld",
+    "sourceImageId": "ws-indoor-004",
+    "title": "现代办公室 · 大视角",
+    "category": "FlashWorld",
+    "inputImage": "media/flash-wide-6/input.png",
+    "prompt": "In the Modern Office, natural light filters through sheer curtains, softly illuminating the sleek desk and ergonomic chairs.",
+    "source": "static/photorealistic/indoor/workspaces/064.png",
+    "featured": true,
+    "results": [
+      {
+        "method": "FlashWorld",
+        "version": "v0.9.0",
+        "trajectory": "右转65°",
+        "video": "media/flash-wide-6/video.mp4",
+        "poster": "media/flash-wide-6/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 0,
+          "cameraProfile": {
+            "protocol": "gallery-wide-horizontal-v1",
+            "index": 6,
+            "scene": "office",
+            "case_name": "wideview-06",
+            "signed_yaw_deg": -65,
+            "yaw_direction": "right",
+            "max_rotation_deg": 65,
+            "translation_model_units": 0,
+            "image_anchor_index": 0,
+            "input_anchor_video_seconds": 0,
+            "reference_run": "gallery-06-71013-6",
+            "reference_gallery_profile": "room_short",
+            "reference_scale_source": "same_gallery_profile_export_scale",
+            "recipe_file_sha256": "93e674d34fc7ab2a1558dd99f77af45dea520679868438dad542b21e26147802",
+            "source_gallery_recipe_sha256": "d19bea09c9a1a917960891b99d3a8945cad8bbef7f9267c1ac53488f45692860",
+            "seed": 0,
+            "gpu_visual_validation": "pending",
+            "comparison": "same_image_and_text; new_camera_protocol; not_single_factor_yaw_ablation_against_old_gallery",
+            "text_variant_warning": "index_9_is_not_text_only_comparison_against_original_studio"
+          },
+          "metricScaleAlignment": "not established"
+        }
+      }
+    ]
+  },
+  {
+    "id": "flash-wide-7",
+    "section": "flashworld",
+    "sourceImageId": "ws-indoor-005",
+    "title": "第二间厨房 · 大视角",
+    "category": "FlashWorld",
+    "inputImage": "media/flash-wide-7/input.jpg",
+    "prompt": "In the Modern Kitchen scene, the stainless steel refrigerator stands beside the sleek kitchen island, under bright, overhead lighting.",
+    "source": "static/photorealistic/indoor/dining_spaces/037.jpg",
+    "featured": true,
+    "results": [
+      {
+        "method": "FlashWorld",
+        "version": "v0.9.0",
+        "trajectory": "左转60°",
+        "video": "media/flash-wide-7/video.mp4",
+        "poster": "media/flash-wide-7/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 0,
+          "cameraProfile": {
+            "protocol": "gallery-wide-horizontal-v1",
+            "index": 7,
+            "scene": "kitchen",
+            "case_name": "wideview-07",
+            "signed_yaw_deg": 60,
+            "yaw_direction": "left",
+            "max_rotation_deg": 60,
+            "translation_model_units": 0,
+            "image_anchor_index": 0,
+            "input_anchor_video_seconds": 0,
+            "reference_run": "gallery-07-71013-7",
+            "reference_gallery_profile": "studio_mirrored",
+            "reference_scale_source": "same_gallery_profile_export_scale",
+            "recipe_file_sha256": "93e674d34fc7ab2a1558dd99f77af45dea520679868438dad542b21e26147802",
+            "source_gallery_recipe_sha256": "d19bea09c9a1a917960891b99d3a8945cad8bbef7f9267c1ac53488f45692860",
+            "seed": 0,
+            "gpu_visual_validation": "pending",
+            "comparison": "same_image_and_text; new_camera_protocol; not_single_factor_yaw_ablation_against_old_gallery",
+            "text_variant_warning": "index_9_is_not_text_only_comparison_against_original_studio"
+          },
+          "metricScaleAlignment": "not established"
+        }
+      }
+    ]
+  },
+  {
+    "id": "flash-wide-8",
+    "section": "flashworld",
+    "sourceImageId": "official-3",
+    "title": "客厅 · 相机轨迹变体 · 大视角",
+    "category": "FlashWorld",
+    "inputImage": "media/flash-wide-8/input.png",
+    "prompt": "A white coffee table with pillows on it is shown in a living room.",
+    "source": "归档的官方示例输入",
+    "featured": true,
+    "results": [
+      {
+        "method": "FlashWorld",
+        "version": "v0.9.0",
+        "trajectory": "右转55°",
+        "video": "media/flash-wide-8/video.mp4",
+        "poster": "media/flash-wide-8/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 0,
+          "cameraProfile": {
+            "protocol": "gallery-wide-horizontal-v1",
+            "index": 8,
+            "scene": "room",
+            "case_name": "wideview-08",
+            "signed_yaw_deg": -55,
+            "yaw_direction": "right",
+            "max_rotation_deg": 55,
+            "translation_model_units": 0,
+            "image_anchor_index": 0,
+            "input_anchor_video_seconds": 0,
+            "reference_run": "gallery-08-71013-8",
+            "reference_gallery_profile": "studio",
+            "reference_scale_source": "same_gallery_profile_export_scale",
+            "recipe_file_sha256": "93e674d34fc7ab2a1558dd99f77af45dea520679868438dad542b21e26147802",
+            "source_gallery_recipe_sha256": "d19bea09c9a1a917960891b99d3a8945cad8bbef7f9267c1ac53488f45692860",
+            "seed": 0,
+            "gpu_visual_validation": "pending",
+            "comparison": "same_image_and_text; new_camera_protocol; not_single_factor_yaw_ablation_against_old_gallery",
+            "text_variant_warning": "index_9_is_not_text_only_comparison_against_original_studio"
+          },
+          "metricScaleAlignment": "not established"
+        }
+      }
+    ]
+  },
+  {
+    "id": "flash-wide-9",
+    "section": "flashworld",
+    "sourceImageId": "official-5",
+    "title": "音响房间 · 文本变体 · 大视角",
+    "category": "FlashWorld",
+    "inputImage": "media/flash-wide-9/input.png",
+    "prompt": "A room with sound equipment. Keep the visible sound equipment and room layout unchanged. Extend warm wooden acoustic wall panels into newly revealed areas while keeping the floor space unobstructed.",
+    "source": "归档的官方示例输入",
+    "featured": true,
+    "results": [
+      {
+        "method": "FlashWorld",
+        "version": "v0.9.0",
+        "trajectory": "左转65°",
+        "video": "media/flash-wide-9/video.mp4",
+        "poster": "media/flash-wide-9/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 0,
+          "cameraProfile": {
+            "protocol": "gallery-wide-horizontal-v1",
+            "index": 9,
+            "scene": "studio",
+            "case_name": "wideview-09",
+            "signed_yaw_deg": 65,
+            "yaw_direction": "left",
+            "max_rotation_deg": 65,
+            "translation_model_units": 0,
+            "image_anchor_index": 0,
+            "input_anchor_video_seconds": 0,
+            "reference_run": "gallery-09-71013-9",
+            "reference_gallery_profile": "studio",
+            "reference_scale_source": "same_gallery_profile_export_scale",
+            "recipe_file_sha256": "93e674d34fc7ab2a1558dd99f77af45dea520679868438dad542b21e26147802",
+            "source_gallery_recipe_sha256": "d19bea09c9a1a917960891b99d3a8945cad8bbef7f9267c1ac53488f45692860",
+            "seed": 0,
+            "gpu_visual_validation": "pending",
+            "comparison": "same_image_and_text; new_camera_protocol; not_single_factor_yaw_ablation_against_old_gallery",
+            "text_variant_warning": "index_9_is_not_text_only_comparison_against_original_studio"
+          },
+          "metricScaleAlignment": "not established"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lucid-0",
+    "section": "luciddreamer",
+    "sourceImageId": "official-3",
+    "title": "客厅",
+    "category": "LucidDreamer",
+    "inputImage": "media/lucid-0/input.png",
+    "prompt": "A white coffee table with pillows on it is shown in a living room.",
+    "source": "归档的官方示例输入",
+    "featured": true,
+    "results": [
+      {
+        "method": "LucidDreamer",
+        "version": "v0.10.0",
+        "trajectory": "左转40°",
+        "video": "media/lucid-0/video.mp4",
+        "poster": "media/lucid-0/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 0,
+          "cameraProfile": {
+            "protocol": "lucid-varied-yaw-v1",
+            "index": 0,
+            "scene": "room",
+            "signed_yaw_deg": 40,
+            "direction": "left",
+            "motion": "fixed_center_anchor_local_horizontal_yaw",
+            "easing": "smoothstep_3t2_minus_2t3_at_24_keyframes; dense_slerp",
+            "source_image_index": 3,
+            "image_anchor_index": 0,
+            "input_anchor_video_seconds": 0,
+            "translation_model_units": 0,
+            "max_keyframe_step_deg": 2.6070518615928293,
+            "reference_scale_source": "unchanged_legacy_case_translation_extent",
+            "reference_scale": 6.610169060355968,
+            "source_gallery_profile": null,
+            "recipe_file_sha256": "fb9b32a872da9cfa929b816ff4a8fa95d6751e75adfe25d100cfc78ce2709a8c",
+            "angle_basis": "development_showcase_choice; not calibrated or paper-prescribed",
+            "visual_validation": "pending_4090_generation_and_review",
+            "comparison": "new_camera_protocol; use_saved_flashworld_json_for_matched_rerun",
+            "text_variant_warning": "case_9_also_changes_camera_vs_case_1; not_text_only_ablation"
+          },
+          "metricScaleAlignment": "unverified_no_ground_truth; ZoeDepth_native_depth_retained"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lucid-1",
+    "section": "luciddreamer",
+    "sourceImageId": "official-5",
+    "title": "音响房间",
+    "category": "LucidDreamer",
+    "inputImage": "media/lucid-1/input.png",
+    "prompt": "A room with sound equipment.",
+    "source": "归档的官方示例输入",
+    "featured": true,
+    "results": [
+      {
+        "method": "LucidDreamer",
+        "version": "v0.10.0",
+        "trajectory": "右转50°",
+        "video": "media/lucid-1/video.mp4",
+        "poster": "media/lucid-1/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 0,
+          "cameraProfile": {
+            "protocol": "lucid-varied-yaw-v1",
+            "index": 1,
+            "scene": "studio",
+            "signed_yaw_deg": -50,
+            "direction": "right",
+            "motion": "fixed_center_anchor_local_horizontal_yaw",
+            "easing": "smoothstep_3t2_minus_2t3_at_24_keyframes; dense_slerp",
+            "source_image_index": 9,
+            "image_anchor_index": 0,
+            "input_anchor_video_seconds": 0,
+            "translation_model_units": 0,
+            "max_keyframe_step_deg": 3.258814826991035,
+            "reference_scale_source": "unchanged_legacy_case_translation_extent",
+            "reference_scale": 2.8545157163993515,
+            "source_gallery_profile": null,
+            "recipe_file_sha256": "fb9b32a872da9cfa929b816ff4a8fa95d6751e75adfe25d100cfc78ce2709a8c",
+            "angle_basis": "development_showcase_choice; not calibrated or paper-prescribed",
+            "visual_validation": "pending_4090_generation_and_review",
+            "comparison": "new_camera_protocol; use_saved_flashworld_json_for_matched_rerun",
+            "text_variant_warning": "case_9_also_changes_camera_vs_case_1; not_text_only_ablation"
+          },
+          "metricScaleAlignment": "unverified_no_ground_truth; ZoeDepth_native_depth_retained"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lucid-2",
+    "section": "luciddreamer",
+    "sourceImageId": "ws-indoor-000",
+    "title": "现代厨房",
+    "category": "LucidDreamer",
+    "inputImage": "media/lucid-2/input.png",
+    "prompt": "In the Modern Kitchen, the sleek wooden cabinets and stainless steel oven gleam under soft lighting, with a spacious layout that invites culinary creativity.",
+    "source": "static/photorealistic/indoor/dining_spaces/013.jpg",
+    "featured": true,
+    "results": [
+      {
+        "method": "LucidDreamer",
+        "version": "v0.10.0",
+        "trajectory": "左转45°",
+        "video": "media/lucid-2/video.mp4",
+        "poster": "media/lucid-2/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 0,
+          "cameraProfile": {
+            "protocol": "lucid-varied-yaw-v1",
+            "index": 2,
+            "scene": "kitchen_first",
+            "signed_yaw_deg": 45,
+            "direction": "left",
+            "motion": "fixed_center_anchor_local_horizontal_yaw",
+            "easing": "smoothstep_3t2_minus_2t3_at_24_keyframes; dense_slerp",
+            "source_image_index": 9,
+            "image_anchor_index": 0,
+            "input_anchor_video_seconds": 0,
+            "translation_model_units": 0,
+            "max_keyframe_step_deg": 2.932933344291932,
+            "reference_scale_source": "unchanged_legacy_case_translation_extent",
+            "reference_scale": 2.8545157163993515,
+            "source_gallery_profile": null,
+            "recipe_file_sha256": "fb9b32a872da9cfa929b816ff4a8fa95d6751e75adfe25d100cfc78ce2709a8c",
+            "angle_basis": "development_showcase_choice; not calibrated or paper-prescribed",
+            "visual_validation": "pending_4090_generation_and_review",
+            "comparison": "new_camera_protocol; use_saved_flashworld_json_for_matched_rerun",
+            "text_variant_warning": "case_9_also_changes_camera_vs_case_1; not_text_only_ablation"
+          },
+          "metricScaleAlignment": "unverified_no_ground_truth; ZoeDepth_native_depth_retained"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lucid-3",
+    "section": "luciddreamer",
+    "sourceImageId": "ws-indoor-001",
+    "title": "客餐厅",
+    "category": "LucidDreamer",
+    "inputImage": "media/lucid-3/input.png",
+    "prompt": "In the Modern Living Space, a sleek armchair and a stylish dining table create a harmonious blend of comfort and elegance.",
+    "source": "static/photorealistic/indoor/living_spaces/029.jpg",
+    "featured": true,
+    "results": [
+      {
+        "method": "LucidDreamer",
+        "version": "v0.10.0",
+        "trajectory": "左转65°",
+        "video": "media/lucid-3/video.mp4",
+        "poster": "media/lucid-3/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 0,
+          "cameraProfile": {
+            "protocol": "lucid-varied-yaw-v1",
+            "index": 3,
+            "scene": "living_dining",
+            "signed_yaw_deg": 65,
+            "direction": "left",
+            "motion": "fixed_center_anchor_local_horizontal_yaw",
+            "easing": "smoothstep_3t2_minus_2t3_at_24_keyframes; dense_slerp",
+            "source_image_index": 9,
+            "image_anchor_index": 0,
+            "input_anchor_video_seconds": 0,
+            "translation_model_units": 0,
+            "max_keyframe_step_deg": 4.236459275088347,
+            "reference_scale_source": "unchanged_legacy_case_translation_extent",
+            "reference_scale": 3.481835354645268,
+            "source_gallery_profile": "room_short",
+            "recipe_file_sha256": "fb9b32a872da9cfa929b816ff4a8fa95d6751e75adfe25d100cfc78ce2709a8c",
+            "angle_basis": "development_showcase_choice; not calibrated or paper-prescribed",
+            "visual_validation": "pending_4090_generation_and_review",
+            "comparison": "new_camera_protocol; use_saved_flashworld_json_for_matched_rerun",
+            "text_variant_warning": "case_9_also_changes_camera_vs_case_1; not_text_only_ablation"
+          },
+          "metricScaleAlignment": "unverified_no_ground_truth; ZoeDepth_native_depth_retained"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lucid-4",
+    "section": "luciddreamer",
+    "sourceImageId": "ws-indoor-002",
+    "title": "废弃走廊",
+    "category": "LucidDreamer",
+    "inputImage": "media/lucid-4/input.png",
+    "prompt": "In the Abandoned Hallway, scattered debris and damaged walls create an eerie, dilapidated atmosphere.",
+    "source": "static/photorealistic/indoor/passageways/021.jpg",
+    "featured": true,
+    "results": [
+      {
+        "method": "LucidDreamer",
+        "version": "v0.10.0",
+        "trajectory": "左转35°",
+        "video": "media/lucid-4/video.mp4",
+        "poster": "media/lucid-4/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 0,
+          "cameraProfile": {
+            "protocol": "lucid-varied-yaw-v1",
+            "index": 4,
+            "scene": "hallway",
+            "signed_yaw_deg": 35,
+            "direction": "left",
+            "motion": "fixed_center_anchor_local_horizontal_yaw",
+            "easing": "smoothstep_3t2_minus_2t3_at_24_keyframes; dense_slerp",
+            "source_image_index": 9,
+            "image_anchor_index": 0,
+            "input_anchor_video_seconds": 0,
+            "translation_model_units": 0,
+            "max_keyframe_step_deg": 2.2811703788937265,
+            "reference_scale_source": "unchanged_legacy_case_translation_extent",
+            "reference_scale": 2.8545157163993515,
+            "source_gallery_profile": "studio",
+            "recipe_file_sha256": "fb9b32a872da9cfa929b816ff4a8fa95d6751e75adfe25d100cfc78ce2709a8c",
+            "angle_basis": "development_showcase_choice; not calibrated or paper-prescribed",
+            "visual_validation": "pending_4090_generation_and_review",
+            "comparison": "new_camera_protocol; use_saved_flashworld_json_for_matched_rerun",
+            "text_variant_warning": "case_9_also_changes_camera_vs_case_1; not_text_only_ablation"
+          },
+          "metricScaleAlignment": "unverified_no_ground_truth; ZoeDepth_native_depth_retained"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lucid-5",
+    "section": "luciddreamer",
+    "sourceImageId": "ws-indoor-003",
+    "title": "历史图书馆",
+    "category": "LucidDreamer",
+    "inputImage": "media/lucid-5/input.png",
+    "prompt": "In the Historic Library, towering bookshelves and a stone tablet display create an atmosphere of ancient wisdom and knowledge.",
+    "source": "static/photorealistic/indoor/public_spaces/040.jpg",
+    "featured": true,
+    "results": [
+      {
+        "method": "LucidDreamer",
+        "version": "v0.10.0",
+        "trajectory": "右转60°",
+        "video": "media/lucid-5/video.mp4",
+        "poster": "media/lucid-5/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 0,
+          "cameraProfile": {
+            "protocol": "lucid-varied-yaw-v1",
+            "index": 5,
+            "scene": "library",
+            "signed_yaw_deg": -60,
+            "direction": "right",
+            "motion": "fixed_center_anchor_local_horizontal_yaw",
+            "easing": "smoothstep_3t2_minus_2t3_at_24_keyframes; dense_slerp",
+            "source_image_index": 9,
+            "image_anchor_index": 0,
+            "input_anchor_video_seconds": 0,
+            "translation_model_units": 0,
+            "max_keyframe_step_deg": 3.910577792389244,
+            "reference_scale_source": "unchanged_legacy_case_translation_extent",
+            "reference_scale": 2.854515716399353,
+            "source_gallery_profile": "studio_mirrored",
+            "recipe_file_sha256": "fb9b32a872da9cfa929b816ff4a8fa95d6751e75adfe25d100cfc78ce2709a8c",
+            "angle_basis": "development_showcase_choice; not calibrated or paper-prescribed",
+            "visual_validation": "pending_4090_generation_and_review",
+            "comparison": "new_camera_protocol; use_saved_flashworld_json_for_matched_rerun",
+            "text_variant_warning": "case_9_also_changes_camera_vs_case_1; not_text_only_ablation"
+          },
+          "metricScaleAlignment": "unverified_no_ground_truth; ZoeDepth_native_depth_retained"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lucid-6",
+    "section": "luciddreamer",
+    "sourceImageId": "ws-indoor-004",
+    "title": "现代办公室",
+    "category": "LucidDreamer",
+    "inputImage": "media/lucid-6/input.png",
+    "prompt": "In the Modern Office, natural light filters through sheer curtains, softly illuminating the sleek desk and ergonomic chairs.",
+    "source": "static/photorealistic/indoor/workspaces/064.png",
+    "featured": true,
+    "results": [
+      {
+        "method": "LucidDreamer",
+        "version": "v0.10.0",
+        "trajectory": "右转55°",
+        "video": "media/lucid-6/video.mp4",
+        "poster": "media/lucid-6/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 0,
+          "cameraProfile": {
+            "protocol": "lucid-varied-yaw-v1",
+            "index": 6,
+            "scene": "office",
+            "signed_yaw_deg": -55,
+            "direction": "right",
+            "motion": "fixed_center_anchor_local_horizontal_yaw",
+            "easing": "smoothstep_3t2_minus_2t3_at_24_keyframes; dense_slerp",
+            "source_image_index": 9,
+            "image_anchor_index": 0,
+            "input_anchor_video_seconds": 0,
+            "translation_model_units": 0,
+            "max_keyframe_step_deg": 3.584696309690141,
+            "reference_scale_source": "unchanged_legacy_case_translation_extent",
+            "reference_scale": 3.481835354645268,
+            "source_gallery_profile": "room_short",
+            "recipe_file_sha256": "fb9b32a872da9cfa929b816ff4a8fa95d6751e75adfe25d100cfc78ce2709a8c",
+            "angle_basis": "development_showcase_choice; not calibrated or paper-prescribed",
+            "visual_validation": "pending_4090_generation_and_review",
+            "comparison": "new_camera_protocol; use_saved_flashworld_json_for_matched_rerun",
+            "text_variant_warning": "case_9_also_changes_camera_vs_case_1; not_text_only_ablation"
+          },
+          "metricScaleAlignment": "unverified_no_ground_truth; ZoeDepth_native_depth_retained"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lucid-7",
+    "section": "luciddreamer",
+    "sourceImageId": "ws-indoor-005",
+    "title": "第二间厨房",
+    "category": "LucidDreamer",
+    "inputImage": "media/lucid-7/input.png",
+    "prompt": "In the Modern Kitchen scene, the stainless steel refrigerator stands beside the sleek kitchen island, under bright, overhead lighting.",
+    "source": "static/photorealistic/indoor/dining_spaces/037.jpg",
+    "featured": true,
+    "results": [
+      {
+        "method": "LucidDreamer",
+        "version": "v0.10.0",
+        "trajectory": "左转48°",
+        "video": "media/lucid-7/video.mp4",
+        "poster": "media/lucid-7/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 0,
+          "cameraProfile": {
+            "protocol": "lucid-varied-yaw-v1",
+            "index": 7,
+            "scene": "kitchen_second",
+            "signed_yaw_deg": 48,
+            "direction": "left",
+            "motion": "fixed_center_anchor_local_horizontal_yaw",
+            "easing": "smoothstep_3t2_minus_2t3_at_24_keyframes; dense_slerp",
+            "source_image_index": 9,
+            "image_anchor_index": 0,
+            "input_anchor_video_seconds": 0,
+            "translation_model_units": 0,
+            "max_keyframe_step_deg": 3.128462233911389,
+            "reference_scale_source": "unchanged_legacy_case_translation_extent",
+            "reference_scale": 2.854515716399353,
+            "source_gallery_profile": "studio_mirrored",
+            "recipe_file_sha256": "fb9b32a872da9cfa929b816ff4a8fa95d6751e75adfe25d100cfc78ce2709a8c",
+            "angle_basis": "development_showcase_choice; not calibrated or paper-prescribed",
+            "visual_validation": "pending_4090_generation_and_review",
+            "comparison": "new_camera_protocol; use_saved_flashworld_json_for_matched_rerun",
+            "text_variant_warning": "case_9_also_changes_camera_vs_case_1; not_text_only_ablation"
+          },
+          "metricScaleAlignment": "unverified_no_ground_truth; ZoeDepth_native_depth_retained"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lucid-8",
+    "section": "luciddreamer",
+    "sourceImageId": "official-3",
+    "title": "客厅 · 向右转动",
+    "category": "LucidDreamer",
+    "inputImage": "media/lucid-8/input.png",
+    "prompt": "A white coffee table with pillows on it is shown in a living room.",
+    "source": "归档的官方示例输入",
+    "featured": true,
+    "results": [
+      {
+        "method": "LucidDreamer",
+        "version": "v0.10.0",
+        "trajectory": "右转58°",
+        "video": "media/lucid-8/video.mp4",
+        "poster": "media/lucid-8/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 0,
+          "cameraProfile": {
+            "protocol": "lucid-varied-yaw-v1",
+            "index": 8,
+            "scene": "room_camera_variant",
+            "signed_yaw_deg": -58,
+            "direction": "right",
+            "motion": "fixed_center_anchor_local_horizontal_yaw",
+            "easing": "smoothstep_3t2_minus_2t3_at_24_keyframes; dense_slerp",
+            "source_image_index": 9,
+            "image_anchor_index": 0,
+            "input_anchor_video_seconds": 0,
+            "translation_model_units": 0,
+            "max_keyframe_step_deg": 3.7802251993096014,
+            "reference_scale_source": "unchanged_legacy_case_translation_extent",
+            "reference_scale": 2.8545157163993515,
+            "source_gallery_profile": "studio",
+            "recipe_file_sha256": "fb9b32a872da9cfa929b816ff4a8fa95d6751e75adfe25d100cfc78ce2709a8c",
+            "angle_basis": "development_showcase_choice; not calibrated or paper-prescribed",
+            "visual_validation": "pending_4090_generation_and_review",
+            "comparison": "new_camera_protocol; use_saved_flashworld_json_for_matched_rerun",
+            "text_variant_warning": "case_9_also_changes_camera_vs_case_1; not_text_only_ablation"
+          },
+          "metricScaleAlignment": "unverified_no_ground_truth; ZoeDepth_native_depth_retained"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lucid-9",
+    "section": "luciddreamer",
+    "sourceImageId": "official-5",
+    "title": "音响房间 · 文本与相机变体",
+    "category": "LucidDreamer",
+    "inputImage": "media/lucid-9/input.png",
+    "prompt": "A room with sound equipment. Keep the visible sound equipment and room layout unchanged. Extend warm wooden acoustic wall panels into newly revealed areas while keeping the floor space unobstructed.",
+    "source": "归档的官方示例输入",
+    "featured": true,
+    "results": [
+      {
+        "method": "LucidDreamer",
+        "version": "v0.10.0",
+        "trajectory": "左转52°",
+        "video": "media/lucid-9/video.mp4",
+        "poster": "media/lucid-9/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 0,
+          "cameraProfile": {
+            "protocol": "lucid-varied-yaw-v1",
+            "index": 9,
+            "scene": "studio_text_and_camera_variant",
+            "signed_yaw_deg": 52,
+            "direction": "left",
+            "motion": "fixed_center_anchor_local_horizontal_yaw",
+            "easing": "smoothstep_3t2_minus_2t3_at_24_keyframes; dense_slerp",
+            "source_image_index": 9,
+            "image_anchor_index": 0,
+            "input_anchor_video_seconds": 0,
+            "translation_model_units": 0,
+            "max_keyframe_step_deg": 3.389167420070681,
+            "reference_scale_source": "unchanged_legacy_case_translation_extent",
+            "reference_scale": 2.8545157163993515,
+            "source_gallery_profile": "studio",
+            "recipe_file_sha256": "fb9b32a872da9cfa929b816ff4a8fa95d6751e75adfe25d100cfc78ce2709a8c",
+            "angle_basis": "development_showcase_choice; not calibrated or paper-prescribed",
+            "visual_validation": "pending_4090_generation_and_review",
+            "comparison": "new_camera_protocol; use_saved_flashworld_json_for_matched_rerun",
+            "text_variant_warning": "case_9_also_changes_camera_vs_case_1; not_text_only_ablation"
+          },
+          "metricScaleAlignment": "unverified_no_ground_truth; ZoeDepth_native_depth_retained"
+        }
+      }
+    ]
+  },
+  {
+    "id": "angle-sweep",
+    "section": "angles",
+    "sourceImageId": "ws-indoor-001",
+    "title": "客餐厅 · 转动角度实验",
+    "category": "FlashWorld",
+    "inputImage": "media/angle-30/input.jpg",
+    "prompt": "In the Modern Living Space, a sleek armchair and a stylish dining table create a harmonious blend of comfort and elegance.",
+    "source": "static/photorealistic/indoor/living_spaces/029.jpg",
+    "featured": true,
+    "results": [
+      {
+        "method": "FlashWorld",
+        "version": "v0.8.0",
+        "trajectory": "左转30°",
+        "video": "media/angle-30/video.mp4",
+        "poster": "media/angle-30/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 0,
+          "cameraProfile": {
+            "protocol": "living-room-left-yaw-v1",
+            "task_index": 0,
+            "case_name": "angles-living-left-30",
+            "source_gallery_index": 3,
+            "reference_run": "gallery-03-71013-3",
+            "source_gallery_recipe_sha256": "d19bea09c9a1a917960891b99d3a8945cad8bbef7f9267c1ac53488f45692860",
+            "recipe_file_sha256": "b1a94f1cab03d672467d020876787613e6083835b5dc217514cfbf5c831c691f",
+            "yaw_direction": "anchor_local_left",
+            "max_yaw_deg": 30,
+            "translation_model_units": 0,
+            "image_anchor_index": 0,
+            "input_anchor_video_seconds": 0,
+            "seed": 0,
+            "reference_scale_source": "gallery_03_room_short_export_scale",
+            "comparison": "only_yaw_amplitude_between_angles_conditions; old_gallery_is_context_only",
+            "camera_calibrated": false,
+            "gpu_visual_validation": "pending"
+          },
+          "metricScaleAlignment": "not established"
+        }
+      },
+      {
+        "method": "FlashWorld",
+        "version": "v0.8.0",
+        "trajectory": "左转45°",
+        "video": "media/angle-45/video.mp4",
+        "poster": "media/angle-45/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 0,
+          "cameraProfile": {
+            "protocol": "living-room-left-yaw-v1",
+            "task_index": 1,
+            "case_name": "angles-living-left-45",
+            "source_gallery_index": 3,
+            "reference_run": "gallery-03-71013-3",
+            "source_gallery_recipe_sha256": "d19bea09c9a1a917960891b99d3a8945cad8bbef7f9267c1ac53488f45692860",
+            "recipe_file_sha256": "b1a94f1cab03d672467d020876787613e6083835b5dc217514cfbf5c831c691f",
+            "yaw_direction": "anchor_local_left",
+            "max_yaw_deg": 45,
+            "translation_model_units": 0,
+            "image_anchor_index": 0,
+            "input_anchor_video_seconds": 0,
+            "seed": 0,
+            "reference_scale_source": "gallery_03_room_short_export_scale",
+            "comparison": "only_yaw_amplitude_between_angles_conditions; old_gallery_is_context_only",
+            "camera_calibrated": false,
+            "gpu_visual_validation": "pending"
+          },
+          "metricScaleAlignment": "not established"
+        }
+      },
+      {
+        "method": "FlashWorld",
+        "version": "v0.8.0",
+        "trajectory": "左转75°",
+        "video": "media/angle-75/video.mp4",
+        "poster": "media/angle-75/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.07,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": null,
+        "protocolAligned": false,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 0,
+          "cameraProfile": {
+            "protocol": "living-room-left-yaw-v1",
+            "task_index": 2,
+            "case_name": "angles-living-left-75",
+            "source_gallery_index": 3,
+            "reference_run": "gallery-03-71013-3",
+            "source_gallery_recipe_sha256": "d19bea09c9a1a917960891b99d3a8945cad8bbef7f9267c1ac53488f45692860",
+            "recipe_file_sha256": "b1a94f1cab03d672467d020876787613e6083835b5dc217514cfbf5c831c691f",
+            "yaw_direction": "anchor_local_left",
+            "max_yaw_deg": 75,
+            "translation_model_units": 0,
+            "image_anchor_index": 0,
+            "input_anchor_video_seconds": 0,
+            "seed": 0,
+            "reference_scale_source": "gallery_03_room_short_export_scale",
+            "comparison": "only_yaw_amplitude_between_angles_conditions; old_gallery_is_context_only",
+            "camera_calibrated": false,
+            "gpu_visual_validation": "pending"
+          },
+          "metricScaleAlignment": "not established"
+        }
+      }
+    ]
+  },
+  {
+    "id": "paired-room40",
+    "section": "comparison",
+    "sourceImageId": "official-3",
+    "title": "客厅 · 同条件左转40°",
+    "category": "FlashWorld",
+    "inputImage": "media/paired-flash/input.png",
+    "prompt": "A white coffee table with pillows on it is shown in a living room.",
+    "source": "归档的官方示例输入",
+    "featured": true,
+    "results": [
+      {
+        "method": "LucidDreamer",
+        "version": "v0.10.0",
+        "trajectory": "固定中心左转40°",
+        "video": "media/paired-lucid/video.mp4",
+        "poster": "media/paired-lucid/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.066666666666666,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": "paired-room40-74470",
+        "protocolAligned": true,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 0,
+          "cameraProfile": {
+            "protocol": "lucid-varied-yaw-v1",
+            "index": 0,
+            "scene": "room",
+            "signed_yaw_deg": 40,
+            "direction": "left",
+            "motion": "fixed_center_anchor_local_horizontal_yaw",
+            "easing": "smoothstep_3t2_minus_2t3_at_24_keyframes; dense_slerp",
+            "source_image_index": 3,
+            "image_anchor_index": 0,
+            "input_anchor_video_seconds": 0,
+            "translation_model_units": 0,
+            "max_keyframe_step_deg": 2.6070518615928293,
+            "reference_scale_source": "unchanged_legacy_case_translation_extent",
+            "reference_scale": 6.610169060355968,
+            "source_gallery_profile": null,
+            "recipe_file_sha256": "fb9b32a872da9cfa929b816ff4a8fa95d6751e75adfe25d100cfc78ce2709a8c",
+            "angle_basis": "development_showcase_choice; not calibrated or paper-prescribed",
+            "visual_validation": "pending_4090_generation_and_review",
+            "comparison": "new_camera_protocol; use_saved_flashworld_json_for_matched_rerun",
+            "text_variant_warning": "case_9_also_changes_camera_vs_case_1; not_text_only_ablation"
+          },
+          "metricScaleAlignment": "not established",
+          "comparisonConditions": {
+            "motion": "fixed_center_left_40_degrees_smoothstep",
+            "metric_scale_alignment": "not_established",
+            "common_render_background_rgb": [
+              1,
+              1,
+              1
+            ],
+            "model_specific_differences": {
+              "FlashWorld": "native checkpoint/sampler/precision; official internal [Static] prefix; T5/VAE offload",
+              "LucidDreamer": "archived SD1.5 inpaint 50 steps/view, ZoeDepth, 2990 Gaussian optimization steps",
+              "seed": "same integer does not imply identical latent noise across models",
+              "scope": "one development example; not a general model ranking or a strict runtime benchmark"
+            }
+          }
+        },
+        "protocol": {
+          "cameraPathHash": "98a8736db37c7820d9ba65ef83997cc32e6349fececba0e0ecf48779f14d8d24",
+          "intrinsicsHash": "eba3e20ded75aceaf50918b6d2ea43d998b738721e68343950f459cd4c516808",
+          "sampleTimesHash": "f2cc584c01f0ab23b79e2b0895e795b6942c0e98ef8c49cb4b73be09746287b7",
+          "coordinateSystem": "anchor_local_OpenGL_c2w; translations_in_FlashWorld_normalized_model_units",
+          "inputImageHash": "f3234ff91e6df36447ccb6b17782dce93234566ca3e01ebaeb5134e53abadb09",
+          "promptHash": "0ffcaa0e480c4828f983de2b43afd046e2e72f6ec3b7e30e86d9369ac041cdda"
+        }
+      },
+      {
+        "method": "FlashWorld",
+        "version": "v0.10.0",
+        "trajectory": "固定中心左转40°",
+        "video": "media/paired-flash/video.mp4",
+        "poster": "media/paired-flash/poster.jpg",
+        "resolution": [
+          704,
+          480
+        ],
+        "fps": 15.0,
+        "duration": 23.066666666666666,
+        "status": "ready",
+        "notes": "真实归档结果；保留原实验版本和相机条件。本展示用于定性观察，不代表整体性能评测。",
+        "comparisonGroup": "paired-room40-74470",
+        "protocolAligned": true,
+        "settings": {
+          "seed": 0,
+          "sampledCameras": 24,
+          "inputAnchorIndex": 0,
+          "cameraProfile": {
+            "protocol": "lucid-varied-yaw-v1",
+            "index": 0,
+            "scene": "room",
+            "signed_yaw_deg": 40,
+            "direction": "left",
+            "motion": "fixed_center_anchor_local_horizontal_yaw",
+            "easing": "smoothstep_3t2_minus_2t3_at_24_keyframes; dense_slerp",
+            "source_image_index": 3,
+            "image_anchor_index": 0,
+            "input_anchor_video_seconds": 0,
+            "translation_model_units": 0,
+            "max_keyframe_step_deg": 2.6070518615928293,
+            "reference_scale_source": "unchanged_legacy_case_translation_extent",
+            "reference_scale": 6.610169060355968,
+            "source_gallery_profile": null,
+            "recipe_file_sha256": "fb9b32a872da9cfa929b816ff4a8fa95d6751e75adfe25d100cfc78ce2709a8c",
+            "angle_basis": "development_showcase_choice; not calibrated or paper-prescribed",
+            "visual_validation": "pending_4090_generation_and_review",
+            "comparison": "new_camera_protocol; use_saved_flashworld_json_for_matched_rerun",
+            "text_variant_warning": "case_9_also_changes_camera_vs_case_1; not_text_only_ablation"
+          },
+          "metricScaleAlignment": "not established",
+          "comparisonConditions": {
+            "motion": "fixed_center_left_40_degrees_smoothstep",
+            "metric_scale_alignment": "not_established",
+            "common_render_background_rgb": [
+              1,
+              1,
+              1
+            ],
+            "model_specific_differences": {
+              "FlashWorld": "native checkpoint/sampler/precision; official internal [Static] prefix; T5/VAE offload",
+              "LucidDreamer": "archived SD1.5 inpaint 50 steps/view, ZoeDepth, 2990 Gaussian optimization steps",
+              "seed": "same integer does not imply identical latent noise across models",
+              "scope": "one development example; not a general model ranking or a strict runtime benchmark"
+            }
+          }
+        },
+        "protocol": {
+          "cameraPathHash": "98a8736db37c7820d9ba65ef83997cc32e6349fececba0e0ecf48779f14d8d24",
+          "intrinsicsHash": "eba3e20ded75aceaf50918b6d2ea43d998b738721e68343950f459cd4c516808",
+          "sampleTimesHash": "f2cc584c01f0ab23b79e2b0895e795b6942c0e98ef8c49cb4b73be09746287b7",
+          "coordinateSystem": "anchor_local_OpenGL_c2w; translations_in_FlashWorld_normalized_model_units",
+          "inputImageHash": "f3234ff91e6df36447ccb6b17782dce93234566ca3e01ebaeb5134e53abadb09",
+          "promptHash": "0ffcaa0e480c4828f983de2b43afd046e2e72f6ec3b7e30e86d9369ac041cdda"
+        }
+      }
+    ]
+  }
+]
