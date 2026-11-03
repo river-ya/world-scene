@@ -1,6 +1,6 @@
 # 展示资产与下载
 
-Git 只跟踪源码、文档、小型输入和轻量 JPEG。MP4/SPZ 放在 [v0.10.1 Release](https://github.com/river-ya/world-scene/releases/tag/v0.10.1)。
+Git 只跟踪源码、文档、小型输入和轻量 JPEG。MP4/SPZ 放在 [v0.10.2 Release](https://github.com/river-ya/world-scene/releases/tag/v0.10.2)。
 
 | 附件 | 内容 |
 | --- | --- |

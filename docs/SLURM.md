@@ -1,4 +1,4 @@
-# 公开版 v0.10.1：Slurm 从导入到结果导出
+# 公开版 v0.10.2：Slurm 从导入到结果导出
 
 所有 `your_user`、`your.cluster.example`、`/shared/your_user`、`your_gpu_partition`、`your_4090_node` 都是占位符，先换成自己的配置。本公开版没有预设个人账号或服务器。已有内部 v0.8.0 任务继续使用原目录，不覆盖正在运行的版本。
 
@@ -8,12 +8,12 @@
 
 ```bash
 cd /path/to/downloads
-sha256sum -c world_scene-v0.10.1.tar.gz.sha256
+sha256sum -c world_scene-v0.10.2.tar.gz.sha256
 SCENE_SSH=your_user@your.cluster.example
 SCENE_REMOTE_BASE=/shared/your_user/world-scene-data
 ssh "$SCENE_SSH" mkdir -p "$SCENE_REMOTE_BASE/releases"
 rsync -av --partial --progress \
-  world_scene-v0.10.1.tar.gz world_scene-v0.10.1.tar.gz.sha256 \
+  world_scene-v0.10.2.tar.gz world_scene-v0.10.2.tar.gz.sha256 \
   "$SCENE_SSH:$SCENE_REMOTE_BASE/releases/"
 ```
 
@@ -24,9 +24,9 @@ rsync -av --partial --progress \
 ```bash
 set -euo pipefail
 cd /shared/your_user/world-scene-data/releases
-sha256sum -c world_scene-v0.10.1.tar.gz.sha256
-if [[ ! -e world_scene-v0.10.1 ]]; then tar -xzf world_scene-v0.10.1.tar.gz; fi
-cd world_scene-v0.10.1
+sha256sum -c world_scene-v0.10.2.tar.gz.sha256
+if [[ ! -e world_scene-v0.10.2 ]]; then tar -xzf world_scene-v0.10.2.tar.gz; fi
+cd world_scene-v0.10.2
 if [[ ! -e local.env ]]; then cp local.env.example local.env; fi
 if [[ ! -e lucid.env ]]; then cp lucid.env.example lucid.env; fi
 # 用编辑器修改两份配置中的存储路径、分区、节点及所需 account/QOS。
@@ -123,7 +123,7 @@ FlashWorld 的 96G 是主存，不是显存；64G 曾在模型量化阶段 OOM�
 断线后重新登录并进入实际发布目录。`logs.sh` 的 Ctrl+C 只停止跟踪；不取消 Slurm 作业。后续数组元素启动后重新运行日志命令。排队时无日志正常，结束任务用 sacct 查询。
 
 ```bash
-cd /shared/your_user/world-scene-data/releases/world_scene-v0.10.1
+cd /shared/your_user/world-scene-data/releases/world_scene-v0.10.2
 unset SCENE_ENV SCENE_RUNS SCENE_LOGS SCENE_STATE PYTHON_BIN
 source slurm/config.sh
 ANGLES_JOB=$(cat "$SCENE_STATE/angles-main.jobid")
@@ -187,7 +187,7 @@ cat "$SCENE_RUNS/$ANGLE_CASE-$ANGLE_JOB-$ANGLE_INDEX/manifest.json"
   done
   "$PYTHON_BIN" -B tools/export_results.py \
     --runs "$SCENE_RUNS" --logs "$SCENE_LOGS" --names "${ANGLE_NAMES[@]}" \
-    --output "$DATA_ROOT/exports/world_scene-v0.10.1-angles-$ANGLES_MAIN_JOB.tar.gz"
+    --output "$DATA_ROOT/exports/world_scene-v0.10.2-angles-$ANGLES_MAIN_JOB.tar.gz"
 )
 ```
 
@@ -200,7 +200,7 @@ cat "$SCENE_RUNS/$ANGLE_CASE-$ANGLE_JOB-$ANGLE_INDEX/manifest.json"
   SCENE_REMOTE_BASE=/shared/your_user/world-scene-data
   read -r -p '主数组号（数字）：' ANGLES_MAIN_JOB
   [[ "$ANGLES_MAIN_JOB" =~ ^[0-9]+$ ]]
-  ARCHIVE="world_scene-v0.10.1-angles-$ANGLES_MAIN_JOB.tar.gz"
+  ARCHIVE="world_scene-v0.10.2-angles-$ANGLES_MAIN_JOB.tar.gz"
   mkdir -p experiment-results
   rsync -av --partial --progress \
     "$SCENE_SSH:$SCENE_REMOTE_BASE/exports/$ARCHIVE" \
@@ -251,7 +251,7 @@ LUCID_RUN_JOB=$(cat "$LUCID_STATE/run.jobid")
 sacct -S 2026-10-23 -j "$LUCID_RUN_JOB" --format=JobID%24,State%24,ExitCode,Elapsed,ReqMem,MaxRSS
 python3 -B tools/lucid_export.py --runs "$LUCID_RUNS" --state "$LUCID_STATE" \
   --logs "$LUCID_LOGS" --indices 1 \
-  --output "$LUCID_DATA_ROOT/exports/world_scene-v0.10.1-lucid-$LUCID_RUN_JOB.tar.gz"
+  --output "$LUCID_DATA_ROOT/exports/world_scene-v0.10.2-lucid-$LUCID_RUN_JOB.tar.gz"
 ```
 
 第二模型归档及同名 `.sha256` 的 rsync/sha256sum/tar 操作与第 7 节相同，将 ARCHIVE 替换为上面打印的实际文件名。更多实现细节见 [适配说明](LucidDreamer适配说明.md)。

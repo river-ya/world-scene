@@ -2,7 +2,7 @@
 
 **单图与文本条件的三维场景生成、相机控制，以及 FlashWorld / LucidDreamer 的可复现对照。**
 
-本仓库提供研究复现与实验封装，模型方法归原作者所有。公开源码版 **v0.10.1** 对齐内部实验版 v0.10.0；历史结果保持原始版本身份，不将公开整理误写成重新训练或重新实测。
+本仓库提供研究复现与实验封装，模型方法归原作者所有。公开源码版 **v0.10.2** 对齐内部实验版 v0.10.0；历史结果保持原始版本身份，不将公开整理误写成重新训练或重新实测。
 
 ## 同条件样例
 
@@ -10,15 +10,15 @@
 
 **左：LucidDreamer；右：FlashWorld。点击图片下载完整对比视频。**
 
-[![同条件客厅末端对照](assets/room40-frame-345.jpg)](https://github.com/river-ya/world-scene/releases/download/v0.10.1/paired-room40-side-by-side.mp4)
+[![同条件客厅末端对照](assets/room40-frame-345.jpg)](https://github.com/river-ya/world-scene/releases/download/v0.10.2/paired-room40-side-by-side.mp4)
 
 | 输入附近 | 中段 |
 | --- | --- |
 | ![首帧](assets/room40-frame-000.jpg) | ![中段](assets/room40-frame-150.jpg) |
 
-- [对比视频 MP4](https://github.com/river-ya/world-scene/releases/download/v0.10.1/paired-room40-side-by-side.mp4)
-- [FlashWorld 三维样例 SPZ](https://github.com/river-ya/world-scene/releases/download/v0.10.1/flashworld-room-left40.spz)
-- [附件 SHA256](https://github.com/river-ya/world-scene/releases/download/v0.10.1/SHA256SUMS)
+- [对比视频 MP4](https://github.com/river-ya/world-scene/releases/download/v0.10.2/paired-room40-side-by-side.mp4)
+- [FlashWorld 三维样例 SPZ](https://github.com/river-ya/world-scene/releases/download/v0.10.2/flashworld-room-left40.spz)
+- [附件 SHA256](https://github.com/river-ya/world-scene/releases/download/v0.10.2/SHA256SUMS)
 - [冻结输入与结果元数据](examples/paired-room40/) · [对照条件及局限](docs/RESULTS.md) · [复现指南](docs/PAIRED_COMPARISON.md)
 
 该例在 RTX 4090 完成，末端新区域的结构与纹理差异可见。它是开发样例，不是总体模型排名；新区域没有真实图像监督。视频使用同帧拼接，未锐化、补帧或改变播放速度。预览图和视频有展示编码，三维参数不作增强。
@@ -34,7 +34,7 @@
 | 原论文训练/蒸馏 | 本仓库未复现完整训练 |
 | 动态状态预测与物理规律 | 当前未实现；任务为静态场景生成 |
 
-GPU 结果来自内部 v0.10.0。公开 v0.10.1 的验证范围见 [PUBLIC_VALIDATION.md](docs/PUBLIC_VALIDATION.md)；CI 成功或测试 skipped 不代表 GPU 推理通过。
+GPU 结果来自内部 v0.10.0。公开 v0.10.2 的验证范围见 [PUBLIC_VALIDATION.md](docs/PUBLIC_VALIDATION.md)；CI 成功或测试 skipped 不代表 GPU 推理通过。
 
 ## 快速开始
 

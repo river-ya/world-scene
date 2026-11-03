@@ -1,6 +1,6 @@
 {
   "edition": "public-source",
-  "version": "0.10.1",
+  "version": "0.10.2",
   "derived_from_version": "0.10.0",
   "derived_from_commit": "b2f217072acb6155f65cafbca0a0b77087a4f1f1",
   "preserved": [

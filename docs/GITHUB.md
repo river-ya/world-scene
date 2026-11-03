@@ -6,13 +6,13 @@
 
 ## 1. 选择源码目录
 
-本地已整理目录为 `GitHub发布/world-scene`。如果使用压缩包，先校验摘要并解压，之后进入其顶层 `world_scene-v0.10.1` 目录：
+本地已整理目录为 `GitHub发布/world-scene`。如果使用压缩包，先校验摘要并解压，之后进入其顶层 `world_scene-v0.10.2` 目录：
 
 ```bash
 cd /path/to/downloads
-sha256sum -c world_scene-v0.10.1.tar.gz.sha256
-tar -xzf world_scene-v0.10.1.tar.gz
-cd world_scene-v0.10.1
+sha256sum -c world_scene-v0.10.2.tar.gz.sha256
+tar -xzf world_scene-v0.10.2.tar.gz
+cd world_scene-v0.10.2
 ```
 
 仓库首页应直接看到 README.md、tools/、slurm/ 等，不要再把完整源码套进一个多余的目录上传，也不要只把 ZIP 文件放进仓库。

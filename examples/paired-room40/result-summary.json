@@ -44,19 +44,19 @@
   "display": "left=LucidDreamer; right=FlashWorld; frame synchronized; no temporal retiming",
   "source_version": "0.10.0",
   "source_commit": "b2f217072acb6155f65cafbca0a0b77087a4f1f1",
-  "publication_version": "0.10.1",
+  "publication_version": "0.10.2",
   "technical_status": "complete",
   "scope": "one development example; eight source images across ten Lucid cases; no official benchmark ranking",
   "public_artifacts": {
     "paired-room40-side-by-side.mp4": {
       "bytes": 16388138,
       "sha256": "37b2bcd1b43873c67976cad4284129c3d779547a3d3257e093738d9d78cb9d84",
-      "url": "https://github.com/river-ya/world-scene/releases/download/v0.10.1/paired-room40-side-by-side.mp4"
+      "url": "https://github.com/river-ya/world-scene/releases/download/v0.10.2/paired-room40-side-by-side.mp4"
     },
     "flashworld-room-left40.spz": {
       "bytes": 73121384,
       "sha256": "9cf6102e37134af1ead94f15366667bcb4665aebcb7345569dc32cc13706bbf5",
-      "url": "https://github.com/river-ya/world-scene/releases/download/v0.10.1/flashworld-room-left40.spz"
+      "url": "https://github.com/river-ya/world-scene/releases/download/v0.10.2/flashworld-room-left40.spz"
     }
   }
 }
