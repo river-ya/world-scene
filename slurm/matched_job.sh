@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Resource command: docs/PAIRED_COMPARISON.md.
+# Resource command: docs/REPRODUCIBILITY.md.
 set -euo pipefail
-source "${SCENE_CODE:?请按 PAIRED_COMPARISON.md 提交}/slurm/config.sh"
+source "${SCENE_CODE:?请按 REPRODUCIBILITY.md 提交}/slurm/config.sh"
 export PATH="$SCENE_ENV/bin:$PATH"
 export HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1
 mkdir -p "$SCENE_ASSETS/tmp" "$SCENE_LOGS"

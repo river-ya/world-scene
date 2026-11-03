@@ -14,7 +14,9 @@
     "local configuration",
     "weights and datasets",
     "raw experiment folders and logs",
-    "temporary files"
+    "temporary files",
+    "local experiment diaries and validation records",
+    "superseded execution guides and maintainer instructions"
   ],
   "additional_license": {
     "path": "upstream/LucidDreamer/submodules/simple-knn/LICENSE.md",

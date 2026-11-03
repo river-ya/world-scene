@@ -46,3 +46,10 @@ dist/
 
 # Generated release identity; source checkouts use Git commits instead.
 /RELEASE.json
+
+# Keep local experiment diaries and superseded execution guides out of Git.
+/docs/v*.md
+/docs/*验证记录.md
+/docs/GITHUB.md
+/docs/版本维护.md
+/docs/设计方案.md

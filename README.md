@@ -19,7 +19,7 @@
 - [对比视频 MP4](https://github.com/river-ya/world-scene/releases/download/v0.10.2/paired-room40-side-by-side.mp4)
 - [FlashWorld 三维样例 SPZ](https://github.com/river-ya/world-scene/releases/download/v0.10.2/flashworld-room-left40.spz)
 - [附件 SHA256](https://github.com/river-ya/world-scene/releases/download/v0.10.2/SHA256SUMS)
-- [冻结输入与结果元数据](examples/paired-room40/) · [对照条件及局限](docs/RESULTS.md) · [复现指南](docs/PAIRED_COMPARISON.md)
+- [冻结输入与结果元数据](examples/paired-room40/) · [对照条件及局限](docs/RESULTS.md) · [复现指南](docs/REPRODUCIBILITY.md)
 
 该例在 RTX 4090 完成，末端新区域的结构与纹理差异可见。它是开发样例，不是总体模型排名；新区域没有真实图像监督。视频使用同帧拼接，未锐化、补帧或改变播放速度。预览图和视频有展示编码，三维参数不作增强。
 
@@ -34,7 +34,7 @@
 | 原论文训练/蒸馏 | 本仓库未复现完整训练 |
 | 动态状态预测与物理规律 | 当前未实现；任务为静态场景生成 |
 
-GPU 结果来自内部 v0.10.0。公开 v0.10.2 的验证范围见 [PUBLIC_VALIDATION.md](docs/PUBLIC_VALIDATION.md)；CI 成功或测试 skipped 不代表 GPU 推理通过。
+GPU 结果来自内部 v0.10.0。公开源码通过源文件完整性、CPU 测试和 Shell 语法检查；CI 不运行 GPU 推理，部分测试需要额外依赖或外部开发图片。
 
 ## 快速开始
 
@@ -47,12 +47,7 @@ python3 -B -m unittest discover -s tests -v
 
 固定第三方源码快照已包含在 upstream，无需初始化子模块。权重单独按锁文件下载；缺少依赖或外部开发图片时，部分 CPU 测试明确跳过。
 
-1. 按 [Slurm 完整指南](docs/SLURM.md) 配置自己的数据根、环境、分区和 RTX 4090 节点。
-2. 模型分开安装：FlashWorld 使用 torch 2.6.0/cu124，LucidDreamer 使用独立 torch 2.0.1/cu118 环境。
-3. 先执行 CPU 预检和 GPU check，再跑单例；已验证环境可以复用。
-4. 新相机与 QOS 分批见 [当前实验指南](docs/CURRENT_EXPERIMENTS.md)；大文件说明见 [展示资产说明](docs/ARTIFACTS.md)。
-
-FlashWorld 当前采用 T5/VAE CPU offload，单例申请 96G 主机内存、8 CPU、单张 4090。同条件运行包含模型加载约 61 分钟；这是部署记录，不是论文高显存设备上的秒级核心推理复现，也不作为两模型的严格耗时排名。
+当前安装、Slurm 提交、实时日志和结果导出统一见 [复现指南](docs/REPRODUCIBILITY.md)。两模型使用独立环境；FlashWorld 的 4090 配置采用 T5/VAE CPU offload，申请 96G 主机内存和单张 GPU。
 
 ## 文档与结构
 
@@ -60,6 +55,8 @@ FlashWorld 当前采用 T5/VAE CPU offload，单例申请 96G 主机内存、8 C
 - [实验结果与同条件说明](docs/RESULTS.md)
 - [LucidDreamer 来源与适配](docs/LucidDreamer适配说明.md)
 - [数据与实验协议](docs/数据与实验协议.md)
+- [当前版本复现](docs/REPRODUCIBILITY.md)
+- [展示资产与下载](docs/ARTIFACTS.md)
 
 ~~~text
 tools/       资产校验、输入、模型运行与导出
@@ -69,7 +66,7 @@ slurm/lucid/ LucidDreamer 独立环境与作业
 examples/    小型冻结输入、相机和结果元数据
 assets/      轻量展示图片
 tests/       CPU、完整性、相机与模拟调度检查
-docs/        架构、运行、评估与历史记录
+docs/        架构、实验协议、结果与当前复现入口
 upstream/    固定第三方源码及各自许可证
 ~~~
 
