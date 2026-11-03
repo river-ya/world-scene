@@ -5,3 +5,5 @@ __pycache__/
 .DS_Store
 worldmodels-baseline-static.tar.gz
 worldmodels-baseline-static.tar.gz.sha256
+/README.md
+/CONTENT_GUIDE.md

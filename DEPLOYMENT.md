@@ -11,6 +11,8 @@
 
 本地目录仍为 `worldmodels_baseline`，不需要改名。采用分支隔离是因为科研源码的现有检查禁止MP4与大文件进入源码发布包；没有为网站放宽该检查。
 
+`README.md` 和 `CONTENT_GUIDE.md` 仅保留在本地，由 `.gitignore` 排除，不参与网页构建和后续上传。
+
 ## 本次发布记录
 
 2026-11-03已发布：[打开网站](https://river-ya.github.io/world-scene/)。
@@ -44,7 +46,7 @@ git branch --show-current
 git status --short
 # 上一条分支输出应为 website。
 python3 -B tools/site.py build
-git add src tools tests .github .gitignore requirements-dev.txt README.md DEPLOYMENT.md CONTENT_GUIDE.md
+git add src tools tests .github .gitignore requirements-dev.txt DEPLOYMENT.md
 git diff --cached --stat
 git commit -m 'Update World Scene website'
 git push origin website
