@@ -60,7 +60,6 @@ FlashWorld 当前采用 T5/VAE CPU offload，单例申请 96G 主机内存、8 C
 - [实验结果与同条件说明](docs/RESULTS.md)
 - [LucidDreamer 来源与适配](docs/LucidDreamer适配说明.md)
 - [数据与实验协议](docs/数据与实验协议.md)
-- [GitHub 维护说明](docs/GITHUB.md)
 
 ~~~text
 tools/       资产校验、输入、模型运行与导出
