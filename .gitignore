@@ -17,7 +17,10 @@ dist/
 *.env
 !local.env.example
 !lucid.env.example
-/assets/
+/assets/*
+!/assets/room40-frame-000.jpg
+!/assets/room40-frame-150.jpg
+!/assets/room40-frame-345.jpg
 /datasets/
 /world_scene_assets/
 /world_scene_lucid_assets/

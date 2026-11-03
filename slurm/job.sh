@@ -46,6 +46,13 @@ else
     case_id="angles-living-left-${angles[$index]}"
     "$PYTHON_BIN" -B "$SCENE_CODE/tools/angles.py" prepare --assets "$SCENE_ASSETS" \
       --index "$index" --runtime --output "$TMPDIR/inputs"
+  elif [[ "$stage" == wideview ]]; then
+    [[ "${SEED:-0}" == 0 ]] || { echo 'wideview 必须使用 SEED=0' >&2; exit 2; }
+    index="${SLURM_ARRAY_TASK_ID:?}"
+    [[ "$index" =~ ^[4-9]$ ]] || { echo 'wideview 索引必须为 4–9' >&2; exit 2; }
+    case_id=$(printf 'wideview-%02d' "$index")
+    "$PYTHON_BIN" -B "$SCENE_CODE/tools/wideview.py" prepare --assets "$SCENE_ASSETS" \
+      --index "$index" --runtime --output "$TMPDIR/inputs"
   elif [[ "$stage" == gallery ]]; then
     [[ "${SEED:-0}" == 0 ]] || { echo 'gallery 必须使用 SEED=0' >&2; exit 2; }
     case_id=$(printf 'gallery-%02d' "${SLURM_ARRAY_TASK_ID:?}")

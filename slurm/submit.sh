@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 source "$(dirname "${BASH_SOURCE[0]}")/config.sh"
-stage="${1:?Usage: bash slurm/submit.sh check|smoke|batch|showcase|viewcheck|studioview|gallery|angles|ui}"
-case "$stage" in check|smoke|batch|showcase|viewcheck|studioview|gallery|angles|ui) ;; *) echo '不支持该阶段；训练入口尚未验收。' >&2; exit 2;; esac
+stage="${1:?Usage: bash slurm/submit.sh check|smoke|batch|showcase|viewcheck|studioview|gallery|angles|wideview|ui}"
+case "$stage" in check|smoke|batch|showcase|viewcheck|studioview|gallery|angles|wideview|ui) ;; *) echo '不支持该阶段；训练入口尚未验收。' >&2; exit 2;; esac
 mkdir -p "$SCENE_LOGS" "$SCENE_STATE" "$SCENE_RUNS"
 python3 -B "$SCENE_CODE/tools/experiment.py" inspect
 if [[ "$stage" == showcase ]]; then
@@ -21,6 +21,11 @@ if [[ "$stage" == angles ]]; then
 fi
 if [[ "$stage" != check ]]; then
   "$PYTHON_BIN" -B "$SCENE_CODE/tools/experiment.py" preflight
+fi
+if [[ "$stage" == wideview ]]; then
+  export WIDEVIEW_ARRAY="${WIDEVIEW_ARRAY:-4-9%1}"
+  [[ "${SEED:-0}" == 0 ]] || { echo 'wideview 固定 SEED=0' >&2; exit 2; }
+  "$PYTHON_BIN" -B "$SCENE_CODE/tools/wideview.py" verify --assets "$SCENE_ASSETS" --array "$WIDEVIEW_ARRAY" --runtime
 fi
 if [[ "$stage" == viewcheck || "$stage" == studioview ]]; then
   [[ "${SEED:-0}" == 0 ]] || { echo "$stage 固定 SEED=0，与 70462 一致。" >&2; exit 2; }
@@ -44,6 +49,7 @@ args=(--parsable --partition="$PARTITION"
 [[ "$stage" != showcase ]] || args+=(--array="$SHOWCASE_ARRAY")
 [[ "$stage" != gallery ]] || args+=(--array="$GALLERY_ARRAY")
 [[ "$stage" != angles ]] || args+=(--array="$ANGLES_ARRAY")
+[[ "$stage" != wideview ]] || args+=(--array="$WIDEVIEW_ARRAY")
 [[ -z "${DEPENDENCY:-}" ]] || args+=(--dependency="afterok:$DEPENDENCY")
 job=$(sbatch "${args[@]}" "$SCENE_CODE/slurm/job.sh" "$stage")
 job=${job%%;*}

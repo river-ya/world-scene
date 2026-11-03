@@ -11,7 +11,7 @@ from common import ROOT, sha256, source_check, write_json
 from camera_paths import inverse, multiply, rotate, slerp
 import showcase
 
-PROTOCOL = 'lucid-flash-inputs-v1'
+PROTOCOL = 'lucid-flash-inputs-v2'
 
 
 def source_input(index, assets):
@@ -34,15 +34,17 @@ def crop_parameters(size, output_size):
     return ((w-nw)//2, (h-nh)//2, nw, nh), scale
 
 
-def relative_cameras(cameras, anchor_index):
+def relative_cameras(cameras, anchor_index, reference_scale=None):
     """Anchor-local OpenGL c2w; the SAME translation denominator as FlashWorld.
 
+    Rotation-only paths explicitly retain the original case's positive scale.
     This defines a numerical model-unit protocol, not a metric-scale calibration
     between learned FlashWorld geometry and ZoeDepth geometry.
     """
     anchor = cameras[anchor_index]
-    scale = max(math.dist(c['position'], cameras[0]['position']) for c in cameras)
-    if not math.isfinite(scale) or scale <= 0:
+    scale = (max(math.dist(c['position'], cameras[0]['position']) for c in cameras)
+             if reference_scale is None else reference_scale)
+    if type(scale) not in (int, float) or not math.isfinite(scale) or scale <= 0:
         raise ValueError('轨迹尺度必须为正')
     result = []
     for c in cameras:
@@ -97,8 +99,9 @@ def projection(camera, width, height, near=.01, far=100.):
 
 def prepare(index, assets, output):
     from PIL import Image
+    from lucid_cameras import build, validate_protocol
     source_check()
-    data = source_input(index, assets)
+    data = build(index, source_input(index, assets))
     raw = base64.b64decode(data['image_prompt'].split(',')[-1])
     image = Image.open(io.BytesIO(raw)).convert('RGB')
     n, h, w = data['resolution']
@@ -113,7 +116,8 @@ def prepare(index, assets, output):
         c['cx'] = (c['cx']-left)*scale; c['cy'] = (c['cy']-top)*scale
     if any(abs(c[k]-cameras[0][k]) > 1e-4 for c in cameras for k in ('fx','fy','cx','cy')):
         raise ValueError('LucidDreamer 本版不接受变焦轨迹')
-    relative, translation_scale = relative_cameras(cameras, data['image_index'])
+    control = data['_camera_control']
+    relative, translation_scale = relative_cameras(cameras, data['image_index'], control['reference_scale'])
     output = Path(output)
     output.mkdir(parents=True, exist_ok=False)
     write_json(output/'source.json', data)
@@ -132,8 +136,10 @@ def prepare(index, assets, output):
         'metric_scale_alignment': 'unverified_no_ground_truth; ZoeDepth_native_depth_retained',
         'generation_order': order, 'cameras': relative,
         'render_cameras': dense_cameras(relative),
-        'comparison_scope': 'qualitative_same_RGB_text_K_target_path; not calibrated metric benchmark',
+        'camera_profile': data['_lucid_camera'], 'camera_control': control,
+        'comparison_scope': 'qualitative_same_RGB_text_K; new_camera_protocol; use_flashworld_json_for_matched_rerun; not_metric_benchmark',
     }
+    validate_protocol(protocol)
     write_json(output/'protocol.json', protocol)
     # This portable JSON can be run by FlashWorld if a shared-input rerun is wanted.
     flash = copy.deepcopy(data)

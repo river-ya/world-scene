@@ -6,13 +6,13 @@
 
 ## 1. 选择源码目录
 
-本地已整理目录为 `GitHub发布/world-scene`。如果使用压缩包，先校验摘要并解压，之后进入其顶层 `world_scene-v0.8.1` 目录：
+本地已整理目录为 `GitHub发布/world-scene`。如果使用压缩包，先校验摘要并解压，之后进入其顶层 `world_scene-v0.10.1` 目录：
 
 ```bash
 cd /path/to/downloads
-sha256sum -c world-scene-github-v0.8.1.zip.sha256
-unzip world-scene-github-v0.8.1.zip
-cd world_scene-v0.8.1
+sha256sum -c world_scene-v0.10.1.tar.gz.sha256
+tar -xzf world_scene-v0.10.1.tar.gz
+cd world_scene-v0.10.1
 ```
 
 仓库首页应直接看到 README.md、tools/、slurm/ 等，不要再把完整源码套进一个多余的目录上传，也不要只把 ZIP 文件放进仓库。
@@ -79,3 +79,8 @@ git push origin "v$PUBLIC_VERSION"
 ## 5. 实验展示素材
 
 仓库目前不包含个人实验视频，避免大文件和未审核素材自动公开。后续可单独挑选可展示的短视频或 GIF，记录模型、输入、相机轨迹和实际运行状态，再通过 Release 或专门展示页发布。不要把旧 gallery 与新的纯旋转实验混写成同一协议。
+
+
+## 当前展示资产
+
+README 包含同条件对照图与 Release 视频/三维样例链接。大型 MP4/SPZ 只放 Release，不进入 Git 历史。原始模型权重沿用作者下载地址。新公开状态见 [结果记录](RESULTS.md)。

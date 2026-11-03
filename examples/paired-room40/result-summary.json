@@ -1,0 +1,62 @@
+{
+  "protocol": "paired-room40-v1",
+  "flash_input_sha256": "4b39ab8304aadab08fba0251bdc24159c69822b6d6e0dd40839e15512772c50b",
+  "image_pixel_match": true,
+  "user_text": "A white coffee table with pillows on it is shown in a living room.",
+  "seed_integer": 0,
+  "resolution": [
+    24,
+    480,
+    704
+  ],
+  "generation_cameras": 24,
+  "render_frames": 346,
+  "fps": 15,
+  "motion": "fixed_center_left_40_degrees_smoothstep",
+  "anchor_index": 0,
+  "intrinsics_match": true,
+  "actual_normalized_generation_and_dense_camera_match": true,
+  "target_gpu": "RTX 4090",
+  "metric_scale_alignment": "not_established",
+  "model_specific_differences": {
+    "FlashWorld": "native checkpoint/sampler/precision; official internal [Static] prefix; T5/VAE offload",
+    "LucidDreamer": "archived SD1.5 inpaint 50 steps/view, ZoeDepth, 2990 Gaussian optimization steps",
+    "seed": "same integer does not imply identical latent noise across models",
+    "scope": "one development example; not a general model ranking or a strict runtime benchmark"
+  },
+  "flash_runtime": {
+    "seconds_including_model_load": 3683.048337307002,
+    "gpu_peak_allocated_bytes": 12465346560,
+    "gpu_peak_reserved_bytes": 15766388736,
+    "cpu_peak_rss_kib_linux": 70868784
+  },
+  "lucid_phases": {
+    "model_load": 37.1285630610073,
+    "dream_and_align": 1871.4290889510012,
+    "gaussian_optimization": 40.33132457899046,
+    "render_export": 9.307719481992535
+  },
+  "common_render_background_rgb": [
+    1,
+    1,
+    1
+  ],
+  "display": "left=LucidDreamer; right=FlashWorld; frame synchronized; no temporal retiming",
+  "source_version": "0.10.0",
+  "source_commit": "b2f217072acb6155f65cafbca0a0b77087a4f1f1",
+  "publication_version": "0.10.1",
+  "technical_status": "complete",
+  "scope": "one development example; eight source images across ten Lucid cases; no official benchmark ranking",
+  "public_artifacts": {
+    "paired-room40-side-by-side.mp4": {
+      "bytes": 16388138,
+      "sha256": "37b2bcd1b43873c67976cad4284129c3d779547a3d3257e093738d9d78cb9d84",
+      "url": "https://github.com/river-ya/world-scene/releases/download/v0.10.1/paired-room40-side-by-side.mp4"
+    },
+    "flashworld-room-left40.spz": {
+      "bytes": 73121384,
+      "sha256": "9cf6102e37134af1ead94f15366667bcb4665aebcb7345569dc32cc13706bbf5",
+      "url": "https://github.com/river-ya/world-scene/releases/download/v0.10.1/flashworld-room-left40.spz"
+    }
+  }
+}

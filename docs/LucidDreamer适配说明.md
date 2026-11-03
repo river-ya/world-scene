@@ -1,5 +1,7 @@
 # LucidDreamer 适配与来源
 
+当前相机入口为 [v0.10.0 多样视角指南](CURRENT_EXPERIMENTS.md)：十例分别使用 35°–65° 的不同水平转角，固定中心、输入首帧、左右搭配及起止缓动。以下原路径/生成顺序说明描述 v0.7.0 历史协议；新版相机不再沿用原 room/studio 路径。
+
 原始方法：[LucidDreamer: Domain-free Generation of 3D Gaussian Splatting Scenes](https://arxiv.org/abs/2311.13384)，作者代码固定 `4ddf48563140c4254c8ce566955d12531b46829c`。本项目将运行所需源码子集放在 `upstream/LucidDreamer`；保留原文件版权头与 LICENSE。`configs/lucid.lock.json` 分别记录原始文件和适配后文件 SHA256。
 
 ## 源码改动
@@ -10,6 +12,7 @@
 
 ## 相机与数值约定
 
+- v0.10.0：`tools/lucid_cameras.py` 在原始输入裁剪前替换相机位姿，保留输入相机内参；生成顺序为 0–23，视频为同一路径的 346 帧插值。`lucid_inputs.relative_cameras` 支持显式正参考尺度，以兼容固定中心轨迹；`protocol.json` 和 manifest 保存新协议与角度，`flashworld.json` 保存可复现的成对输入。新相机同时用于 Dreaming 和最终资产重载渲染，需要重新生成场景。
 - FlashWorld 相机为 OpenGL c2w（朝 −Z，Y 向上），LucidDreamer 点云生成使用 CV w2c（朝 +Z，Y 向下）。工具使用输入锚点的局部 CV 坐标系；相机旋转和位置均转换，不能只翻转四元数某一项。
 - 平移分母为原相机相对第一个相机的最大距离加 0.01，与固定 FlashWorld `normalize_cameras` 相同。锚点改为局部原点只是刚体变换，不改变相对路径。
 - FlashWorld 在像素 `u+0.5,v+0.5` 处发射射线；LucidDreamer 原始点云代码使用整数像素，因此 PCD 内参主点减 0.5。GPU 投影矩阵使用对应 NDC→像素中心映射，避免半像素偏差，并支持非中心主点与非方形视场角。

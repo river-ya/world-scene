@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "project_version": "0.8.1",
+  "project_version": "0.10.1",
   "reviewed": "2026-10-16",
   "upstream": {
     "repo": "https://github.com/imlixinyang/FlashWorld.git",

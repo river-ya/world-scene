@@ -165,6 +165,8 @@ def generate(root, protocol, run, phase_callback):
     import torch
     import imageio.v2 as imageio
     from PIL import Image
+    from lucid_cameras import validate_protocol
+    validate_protocol(protocol)
     ld=imports()
     output=run/'outputs'; output.mkdir()
     stage=time.perf_counter()

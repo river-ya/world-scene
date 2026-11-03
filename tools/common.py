@@ -5,6 +5,7 @@ import json
 import os
 from pathlib import Path
 import subprocess
+import tempfile
 from datetime import datetime, timezone
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -24,10 +25,21 @@ def sha256(path):
 
 def write_json(path, value):
     path = Path(path)
+    payload = json.dumps(value, ensure_ascii=False, indent=2) + '\n'
     path.parent.mkdir(parents=True, exist_ok=True)
-    temp = path.with_name(path.name + '.tmp')
-    temp.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n')
-    os.replace(temp, path)
+    # Every writer owns its temp file. A shared "name.tmp" races at rename,
+    # and can even expose another writer's in-progress contents to readers.
+    temp = None
+    try:
+        with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8',
+                                         dir=path.parent, prefix='.'+path.name+'.',
+                                         suffix='.tmp', delete=False) as stream:
+            temp = Path(stream.name)
+            stream.write(payload)
+        os.replace(temp, path)
+    finally:
+        if temp is not None:
+            temp.unlink(missing_ok=True)
 
 
 def lock():

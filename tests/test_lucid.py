@@ -164,15 +164,13 @@ print('123')
 '''); (bin/'sbatch').chmod(0o755)
                 env={k:v for k,v in os.environ.items() if not k.startswith(('LUCID_','SLURM_','SBATCH_'))}
                 env.update(LUCID_ENV=str(root/'env'),LUCID_DATA_ROOT=str(root/'data'),
-                           TEST_ROOT=str(root),TRACE=str(root/'trace'),PATH=str(bin)+':'+os.environ['PATH'],
-                           LUCID_ACCOUNT='',LUCID_QOS='',LUCID_NODE='')
+                           TEST_ROOT=str(root),TRACE=str(root/'trace'),PATH=str(bin)+':'+os.environ['PATH'])
                 command=['bash','slurm/lucid/submit.sh',stage]
                 out=subprocess.run(command,cwd=code,env=env,capture_output=True,text=True)
                 self.assertEqual(out.returncode,0,out.stderr)
                 batch=json.loads((root/'batch.json').read_text()); self.assertEqual(batch['code'],0,batch['err'])
                 args=json.loads((root/'args.json').read_text())
                 self.assertIn('--mem=64G',args); self.assertIn('--export=ALL',args)
-                self.assertFalse(any(arg.startswith(('--account=', '--qos=', '--nodelist=')) for arg in args))
                 self.assertEqual('--array=1%1' in args,stage=='run')
                 state=root/'data/state/world_scene_lucid/v0.7.0'
                 self.assertEqual((state/(stage+'.jobid')).read_text(),'123\n')

@@ -115,6 +115,21 @@ def receipt_path(root, group):
 
 
 def verify(root, group, quick=False):
+    if quick:
+        return _verify(root, group, quick=True)
+    root = Path(root)
+    root.mkdir(parents=True, exist_ok=True)
+    # Persistent lock file: flock is released by the OS on exit. Do not unlink
+    # the file, which could let another process lock a different inode.
+    with (root/f'.verify-{group}.lock').open('a') as guard:
+        try:
+            fcntl.flock(guard, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError as exc:
+            raise RuntimeError(f'同一资产目录的 {group} 完整校验正在运行；请等待该进程结束，不要重复启动。') from exc
+        return _verify(root, group, quick=False)
+
+
+def _verify(root, group, quick=False):
     previous = None
     if quick:
         previous = json.loads(receipt_path(root, group).read_text())

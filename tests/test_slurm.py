@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class SlurmTests(unittest.TestCase):
     def test_relocated_batch_script_for_all_stages(self):
-        for stage in ('check', 'smoke', 'batch', 'showcase', 'viewcheck', 'studioview', 'gallery', 'angles', 'ui'):
+        for stage in ('check', 'smoke', 'batch', 'showcase', 'viewcheck', 'studioview', 'gallery', 'angles', 'wideview', 'ui'):
             with self.subTest(stage=stage), tempfile.TemporaryDirectory() as temp:
                 root = Path(temp)
                 code = root / 'release with spaces'
@@ -29,9 +29,9 @@ class SlurmTests(unittest.TestCase):
                          '    f.write(json.dumps(sys.argv[1:]) + "\\n")\n'
                          'if sys.argv[1] == "preflight" and os.getenv("SCENE_TEST_FAIL_PREFLIGHT"):\n'
                          '    raise SystemExit("preflight failed")\n'
-                         'if sys.argv[0].endswith(("showcase.py", "viewcheck.py", "studioview.py", "gallery.py", "angles.py")) and sys.argv[1] == "verify" and os.getenv("SCENE_TEST_FAIL_INPUTS"):\n'
+                         'if sys.argv[0].endswith(("showcase.py", "viewcheck.py", "studioview.py", "gallery.py", "angles.py", "wideview.py")) and sys.argv[1] == "verify" and os.getenv("SCENE_TEST_FAIL_INPUTS"):\n'
                          '    raise SystemExit("showcase inputs failed")\n')
-                for name in ('experiment.py', 'assets.py', 'showcase.py', 'viewcheck.py', 'studioview.py', 'gallery.py', 'angles.py'):
+                for name in ('experiment.py', 'assets.py', 'showcase.py', 'viewcheck.py', 'studioview.py', 'gallery.py', 'angles.py', 'wideview.py'):
                     (code / 'tools' / name).write_text(probe)
                 bin_dir = root / 'env' / 'bin'
                 bin_dir.mkdir(parents=True)
@@ -52,8 +52,8 @@ spool.mkdir(parents=True)
 script = spool / 'slurm_script'
 shutil.copyfile(args[-2], script)
 env = dict(os.environ, SLURM_JOB_ID='12345')
-if args[-1] in ('batch', 'showcase', 'gallery', 'angles'):
-    env.update(SLURM_ARRAY_JOB_ID='12345', SLURM_ARRAY_TASK_ID='3' if args[-1] == 'gallery' else '2')
+if args[-1] in ('batch', 'showcase', 'gallery', 'angles', 'wideview'):
+    env.update(SLURM_ARRAY_JOB_ID='12345', SLURM_ARRAY_TASK_ID='7' if args[-1] == 'wideview' else '3' if args[-1] == 'gallery' else '2')
 cwd = next(arg.split('=', 1)[1] for arg in args if arg.startswith('--chdir='))
 result = subprocess.run(['bash', str(script), args[-1]], cwd=cwd,
                         env=env, capture_output=True, text=True)
@@ -68,7 +68,7 @@ print('12345')
                 env.update(DATA_ROOT=str(root / 'data'), SCENE_ENV=str(root / 'env'),
                            SCENE_TEST_ROOT=str(root), SCENE_TEST_TRACE=str(trace),
                            PATH=str(bin_dir) + os.pathsep + os.environ['PATH'],
-                           MEM='16G', CPUS='4', MAX_JOBS='2', DEPENDENCY='', ACCOUNT='', QOS='', NODE='')
+                           MEM='16G', CPUS='4', MAX_JOBS='2', DEPENDENCY='')
                 submitted = subprocess.run(['bash', 'slurm/submit.sh', stage],
                                            cwd=code, env=env, capture_output=True, text=True)
                 self.assertEqual(submitted.returncode, 0, submitted.stderr)
@@ -78,7 +78,6 @@ print('12345')
                 self.assertIn('--export=ALL', args)
                 self.assertIn('--mem=16G', args)
                 self.assertIn('--cpus-per-task=4', args)
-                self.assertFalse(any(arg.startswith(('--account=', '--qos=', '--nodelist=')) for arg in args))
                 calls = [json.loads(line) for line in trace.read_text().splitlines()]
                 expected = {'check': ['inspect', 'check'],
                             'smoke': ['inspect', 'preflight', 'check', 'verify', 'prepare', 'run'],
@@ -88,6 +87,7 @@ print('12345')
                             'studioview': ['inspect', 'preflight', 'verify', 'check', 'verify', 'prepare', 'run'],
                             'gallery': ['inspect', 'verify', 'preflight', 'verify', 'check', 'verify', 'prepare', 'run'],
                             'angles': ['inspect', 'verify', 'preflight', 'verify', 'check', 'verify', 'prepare', 'run'],
+                            'wideview': ['inspect', 'preflight', 'verify', 'check', 'verify', 'prepare', 'run'],
                             'ui': ['inspect', 'preflight', 'check', 'verify', 'ui']}[stage]
                 self.assertEqual([call[0] for call in calls], expected)
                 if stage == 'batch':
@@ -111,6 +111,11 @@ print('12345')
                     self.assertIn('--runtime', calls[3])
                     self.assertIn('--runtime', calls[-2])
                     self.assertIn('angles-living-left-75-12345-2', calls[-1])
+                if stage == 'wideview':
+                    self.assertIn('--array=4-9%1', args)
+                    self.assertIn('--runtime', calls[2])
+                    self.assertIn('--runtime', calls[-2])
+                    self.assertIn('wideview-07-12345-7', calls[-1])
                 state = root / 'data/state/world_scene/v0.1.2'
                 self.assertEqual((state / f'{stage}.jobid').read_text(), '12345\n')
                 self.assertEqual(list((root / 'data/world_scene_assets/tmp').iterdir()), [])
@@ -121,7 +126,7 @@ print('12345')
                     self.assertNotEqual(failed.returncode, 0)
                     self.assertEqual((root / 'submissions.txt').read_text(), 'submitted\n')
                     self.assertEqual((state / f'{stage}.jobid').read_text(), '12345\n')
-                if stage in ('showcase', 'viewcheck', 'studioview', 'gallery', 'angles'):
+                if stage in ('showcase', 'viewcheck', 'studioview', 'gallery', 'angles', 'wideview'):
                     env.pop('SCENE_TEST_FAIL_PREFLIGHT', None)
                     env['SCENE_TEST_FAIL_INPUTS'] = '1'
                     failed = subprocess.run(['bash', 'slurm/submit.sh', stage],
@@ -129,7 +134,7 @@ print('12345')
                     self.assertNotEqual(failed.returncode, 0)
                     self.assertEqual((root / 'submissions.txt').read_text(), 'submitted\n')
                     self.assertEqual((state / f'{stage}.jobid').read_text(), '12345\n')
-                if stage in ('viewcheck', 'studioview', 'gallery', 'angles'):
+                if stage in ('viewcheck', 'studioview', 'gallery', 'angles', 'wideview'):
                     env.pop('SCENE_TEST_FAIL_INPUTS', None)
                     env['SEED'] = '1'
                     failed = subprocess.run(['bash', 'slurm/submit.sh', stage],

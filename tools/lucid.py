@@ -68,6 +68,8 @@ def run(args):
                 protocol=prepare(args.index,os.environ['SCENE_ASSETS'],run/'inputs')
                 meta['input_sha256']={p.name:sha256(p) for p in (run/'inputs').iterdir()}
                 meta['protocol']=protocol['protocol']
+                meta['camera_profile']=protocol['camera_profile']
+                meta['camera_control']=protocol['camera_control']
                 meta['metric_scale_alignment']=protocol['metric_scale_alignment']
                 def phase(name,seconds):
                     meta['phases_seconds'][name]=seconds
