@@ -11,6 +11,19 @@
 
 本地目录仍为 `worldmodels_baseline`，不需要改名。采用分支隔离是因为科研源码的现有检查禁止MP4与大文件进入源码发布包；没有为网站放宽该检查。
 
+## 本次发布记录
+
+2026-11-03已发布：[打开网站](https://river-ya.github.io/world-scene/)。
+
+- 网站构建来源：`website` 分支提交 `1470ce05a9488542a01130954fbab456f59cc8f8`。
+- 主分支仅新增发布工作流：`4b1cc7af992d6768be45a40481f2b61f162558f4`，科研源码检查通过。
+- [发布工作流运行记录](https://github.com/river-ya/world-scene/actions/runs/41593491566)：构建与部署均成功。
+- 首页、案例JSON、31条MP4及两张SVG共35个线上地址均返回HTTP 200。
+- Chromium实际播放检查：两种方法各前两个案例选图切换、自动播放与原始文本对应正常；配对视频同步播放、角度切换、两张SVG加载正常。
+- 1440、390与320px宽度未出现横向溢出，浏览器未捕获页面脚本错误。本地完整9项浏览器验收也全部通过。
+
+此次发布包含约248 MiB的网站素材。公开仓库的 `website` 分支含网页源码、31条MP4、输入图片、字体、架构图及相关配置，其他人可以查看与下载。PLY/SPZ、模型权重和完整实验目录未纳入网站。
+
 ## 本地检查与预览
 
 ```bash
@@ -72,7 +85,7 @@ gh api repos/river-ya/world-scene/pages --jq '{url: .html_url, status: .status, 
 curl -I https://river-ya.github.io/world-scene/
 curl -I https://river-ya.github.io/world-scene/data/cases.json
 curl -I https://river-ya.github.io/world-scene/media/architecture/luciddreamer-v0.10.0.svg
-curl -I https://river-ya.github.io/world-scene/media/kitchen/video.mp4
+curl -I https://river-ya.github.io/world-scene/media/room/video.mp4
 ```
 
 ## 回滚

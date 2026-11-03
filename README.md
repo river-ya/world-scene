@@ -1,6 +1,6 @@
 # WorldModels Baseline：五部分研究展示
 
-中文版静态网站：导航、按钮、场景名、轨迹标签、实验设置与架构说明均使用中文。保留 Open Sans 英文字体、原始输入 text、模型与项目专名；中文使用本地 Noto Sans SC 字体子集。原始输入图轮播、视频上方完整输入 text、静音自动播放均保留。目标地址为 https://river-ya.github.io/world-scene/ 。部署使用 river-ya/world-scene 的独立 website 分支，main 保留科研源码和发布工作流；本轮发布状态以线上核验为准。没有提交 GPU / Slurm 作业。
+中文版静态网站：导航、按钮、场景名、轨迹标签、实验设置与架构说明均使用中文。保留 Open Sans 英文字体、原始输入 text、模型与项目专名；中文使用本地 Noto Sans SC 字体子集。原始输入图轮播、视频上方完整输入 text、静音自动播放均保留。已于2026-11-03发布并完成线上核验：[访问网站](https://river-ya.github.io/world-scene/)。部署使用 river-ya/world-scene 的独立 website 分支，main 保留科研源码和发布工作流；部署记录见 [DEPLOYMENT.md](DEPLOYMENT.md)。没有提交 GPU / Slurm 作业。
 
 ## 启动与构建
 
